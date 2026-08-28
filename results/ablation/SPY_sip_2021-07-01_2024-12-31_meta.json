@@ -1,0 +1,37 @@
+{
+  "cells": 144,
+  "cost_fraction_per_side": 0.0,
+  "data_hash": "221eb3a580a8e6dc",
+  "entry_distance": [
+    -0.001,
+    -0.002,
+    -0.003,
+    -0.005,
+    -0.008,
+    -0.012
+  ],
+  "fdr_q": 0.1,
+  "max_hold": [
+    5,
+    15,
+    30,
+    60,
+    120,
+    240
+  ],
+  "no_new_entry_after": [
+    "15:40",
+    "15:55"
+  ],
+  "readable": 96,
+  "seed": 20260828,
+  "survivors": 0,
+  "volume_ratio_min": [
+    1.0,
+    1.2
+  ],
+  "window": [
+    "2021-07-01",
+    "2024-12-31"
+  ]
+}
