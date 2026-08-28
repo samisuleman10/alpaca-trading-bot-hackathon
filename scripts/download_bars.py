@@ -8,11 +8,17 @@ Two flags here are load-bearing and must not be changed casually:
   --adjustment split  Prices are corrected for stock splits. Without this a
                       10-for-1 split reads as a 90 percent overnight crash and
                       every backtest crossing that date is garbage.
-  --feed sip          The consolidated tape: every US exchange. This is the
-                      only feed with full history. Note that live trading on
-                      the free tier can only use IEX, which sees roughly two
-                      percent of the volume, so anything validated here must
-                      be re-checked on IEX before it is deployed.
+  --feed              Which exchanges the prices came from. "sip" is the
+                      consolidated tape -- every US exchange, and the only
+                      feed with full history. "iex" is one small exchange
+                      seeing roughly two to four percent of the volume, and
+                      is what the free tier allows us to trade on live. A
+                      rule that only works on SIP is a rule we cannot run,
+                      so every candidate is measured on both and has to
+                      survive both. The feed is an argument, and it is
+                      written into the output filename, because two files of
+                      the same symbol and dates from different feeds are
+                      different data and must never be confused.
 
 Bars arrive stamped in UTC. Regular US trading hours are 09:30 to 16:00 in
 New York, which is UTC-5 or UTC-4 depending on daylight saving, so the filter
@@ -50,7 +56,7 @@ COLUMNS = [
 ]
 
 
-def fetch_page(symbol, start, end, page_token=None):
+def fetch_page(symbol, start, end, feed, page_token=None):
     """Ask the CLI for up to 10,000 bars. Returns the parsed JSON response."""
     cmd = [
         "alpaca", "data", "bars",
@@ -58,7 +64,7 @@ def fetch_page(symbol, start, end, page_token=None):
         "--start", start,
         "--end", end,
         "--timeframe", "1Min",
-        "--feed", "sip",
+        "--feed", feed,
         "--adjustment", "split",
         "--limit", "10000",
         "--quiet",
@@ -115,7 +121,7 @@ def in_regular_hours(moment_et, sessions):
     return window[0] <= minutes < window[1]
 
 
-def download(symbol, start, end, out_path):
+def download(symbol, start, end, out_path, feed):
     """Page through the whole range, keep regular-hours bars, write one CSV."""
     sessions = fetch_calendar(start, end)
     half_days = sorted(d for d, w in sessions.items() if w[1] != 16 * 60)
@@ -135,7 +141,7 @@ def download(symbol, start, end, out_path):
         writer.writerow(COLUMNS)
 
         while True:
-            payload = fetch_page(symbol, start, end, page_token)
+            payload = fetch_page(symbol, start, end, feed, page_token)
             bars = payload.get("bars") or []
             pages += 1
 
@@ -172,21 +178,35 @@ def download(symbol, start, end, out_path):
 
 
 def main():
-    if len(sys.argv) != 4:
-        print("usage: download_bars.py SYMBOL START END")
-        print("  dates are inclusive-start, exclusive-end, e.g. 2024-01-01 2025-01-01")
+    if len(sys.argv) not in (4, 5):
+        print("usage: download_bars.py SYMBOL START END [FEED]")
+        print("  BOTH dates are inclusive: 2024-01-01 2024-01-31 gives you the")
+        print("  31st as well. Measured, not assumed -- an earlier version of")
+        print("  this file claimed the end was exclusive and it is not. That")
+        print("  off-by-one is how one day of a sealed holdout quietly leaks")
+        print("  into the development set.")
+        print("  FEED is sip (default) or iex")
         return 1
 
     symbol, start, end = sys.argv[1], sys.argv[2], sys.argv[3]
+    # Which feed the prices came from is part of what the file IS, not a
+    # detail, so it goes in the name. SIP is the consolidated tape and the
+    # only one with full history; IEX is a single exchange seeing a few per
+    # cent of the volume, and is what we are actually allowed to trade on
+    # live for free. A candidate has to survive both or it is not a candidate.
+    feed = sys.argv[4] if len(sys.argv) == 5 else "sip"
+    if feed not in ("sip", "iex"):
+        print("unknown feed {!r}: expected sip or iex".format(feed))
+        return 1
     here = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(os.path.dirname(here), "data")
     os.makedirs(data_dir, exist_ok=True)
     out_path = os.path.join(
-        data_dir, "{}_1min_sip_{}_{}.csv".format(symbol, start, end)
+        data_dir, "{}_1min_{}_{}_{}.csv".format(symbol, feed, start, end)
     )
 
-    print("{}  {} to {}  ->  {}".format(symbol, start, end, out_path))
-    kept, seen, pages = download(symbol, start, end, out_path)
+    print("{} [{}]  {} to {}  ->  {}".format(symbol, feed, start, end, out_path))
+    kept, seen, pages = download(symbol, start, end, out_path, feed)
 
     size_mb = os.path.getsize(out_path) / (1024 * 1024)
     print(
