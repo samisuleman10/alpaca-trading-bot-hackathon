@@ -3,6 +3,12 @@
 data/
 !data/.gitkeep
 
+# The design documents are kept out of the repository for now, at Sami's
+# request. They still exist on disk and are still the authority on what is
+# being built -- they are simply not tracked here yet. The README links to
+# them, so this has to be revisited before the repository is made public.
+docs/
+
 # Secrets. There is never a reason for one of these to be in this repository.
 .env
 .env.*
