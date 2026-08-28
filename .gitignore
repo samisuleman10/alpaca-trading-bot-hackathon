@@ -34,3 +34,11 @@ out/
 .idea/
 .DS_Store
 Thumbs.db
+
+# The per-minute backtest files are the audit trail and they are enormous: one
+# development-window run is 39 MB and 342,326 rows. They regenerate exactly
+# from the committed summary's data hash and settings hash, so the repository
+# keeps the trades and the summary and rebuilds the per-minute record on
+# demand. This is also the same unanswered question as data/: they are derived
+# from Alpaca prices.
+results/**/*_bars.csv
