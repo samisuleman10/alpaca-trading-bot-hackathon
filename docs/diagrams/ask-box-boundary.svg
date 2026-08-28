@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="350" viewBox="0 0 680 350" role="img">
+<title>The trust boundary around the ask box</title>
+<desc>Everything the public page can reach: the journal read only, a fixed menu of queries, and the Anthropic API called from the server. Everything it cannot reach: the Alpaca account, the live trader, any API key, and writing to the journal.</desc>
+<defs>
+<style>
+.t { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; }
+.s { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 400; }
+.lbl { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; }
+</style>
+</defs>
+<rect x="0" y="0" width="680" height="350" fill="#FFFFFF"/>
+
+<rect x="24" y="34" width="306" height="292" rx="10" fill="#FAFAF7" stroke="#B0AEA6" stroke-width="0.5"/>
+<text class="lbl" x="177" y="24" text-anchor="middle" fill="#3C3489">WHAT THE PUBLIC PAGE CAN REACH</text>
+
+<rect x="44" y="56" width="266" height="52" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text class="t" x="177" y="74" text-anchor="middle" dominant-baseline="central" fill="#3C3489">The journal, read only</text>
+<text class="s" x="177" y="92" text-anchor="middle" dominant-baseline="central" fill="#534AB7">decisions, orders, sessions</text>
+
+<rect x="44" y="120" width="266" height="52" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text class="t" x="177" y="138" text-anchor="middle" dominant-baseline="central" fill="#3C3489">A fixed menu of queries</text>
+<text class="s" x="177" y="156" text-anchor="middle" dominant-baseline="central" fill="#534AB7">ours, not written by the model</text>
+
+<rect x="44" y="184" width="266" height="52" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text class="t" x="177" y="202" text-anchor="middle" dominant-baseline="central" fill="#3C3489">Anthropic, from the server</text>
+<text class="s" x="177" y="220" text-anchor="middle" dominant-baseline="central" fill="#534AB7">rate limited, capped daily</text>
+
+<rect x="44" y="248" width="266" height="52" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text class="t" x="177" y="274" text-anchor="middle" dominant-baseline="central" fill="#444441">Nothing else</text>
+
+<rect x="350" y="34" width="306" height="292" rx="10" fill="#FFFFFF" stroke="#B0AEA6" stroke-width="0.5" stroke-dasharray="4 3"/>
+<text class="lbl" x="503" y="24" text-anchor="middle" fill="#888780">WHAT IT CANNOT</text>
+
+<rect x="370" y="56" width="266" height="52" rx="8" fill="#FFFFFF" stroke="#D6D4CC" stroke-width="0.5"/>
+<text class="t" x="503" y="74" text-anchor="middle" dominant-baseline="central" fill="#888780">The Alpaca account</text>
+<text class="s" x="503" y="92" text-anchor="middle" dominant-baseline="central" fill="#B0AEA6">no code path exists</text>
+
+<rect x="370" y="120" width="266" height="52" rx="8" fill="#FFFFFF" stroke="#D6D4CC" stroke-width="0.5"/>
+<text class="t" x="503" y="138" text-anchor="middle" dominant-baseline="central" fill="#888780">The live trader</text>
+<text class="s" x="503" y="156" text-anchor="middle" dominant-baseline="central" fill="#B0AEA6">different machine entirely</text>
+
+<rect x="370" y="184" width="266" height="52" rx="8" fill="#FFFFFF" stroke="#D6D4CC" stroke-width="0.5"/>
+<text class="t" x="503" y="202" text-anchor="middle" dominant-baseline="central" fill="#888780">Any API key</text>
+<text class="s" x="503" y="220" text-anchor="middle" dominant-baseline="central" fill="#B0AEA6">never in the page, never in the prompt</text>
+
+<rect x="370" y="248" width="266" height="52" rx="8" fill="#FFFFFF" stroke="#D6D4CC" stroke-width="0.5"/>
+<text class="t" x="503" y="266" text-anchor="middle" dominant-baseline="central" fill="#888780">Writing anything, anywhere</text>
+<text class="s" x="503" y="284" text-anchor="middle" dominant-baseline="central" fill="#B0AEA6">the database permits only reads</text>
+</svg>

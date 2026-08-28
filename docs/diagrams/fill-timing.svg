@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="240" viewBox="0 0 680 240" role="img">
+<title>Fill timing rule in the backtest</title>
+<desc>Five one-minute price bars. The decision is made at the close of the second bar, and the order is filled at the opening price of the third bar, never at the closing price the decision was based on.</desc>
+<style>
+.s { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 400; }
+</style>
+<rect x="0" y="0" width="680" height="240" fill="#FFFFFF"/>
+
+<line x1="150" y1="80" x2="150" y2="120" stroke="#888780" stroke-width="1.5"/>
+<rect x="138" y="90" width="24" height="20" rx="2" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+
+<line x1="240" y1="100" x2="240" y2="150" stroke="#888780" stroke-width="1.5"/>
+<rect x="228" y="110" width="24" height="30" rx="2" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+
+<line x1="330" y1="120" x2="330" y2="155" stroke="#888780" stroke-width="1.5"/>
+<rect x="318" y="130" width="24" height="15" rx="2" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+
+<line x1="420" y1="95" x2="420" y2="135" stroke="#888780" stroke-width="1.5"/>
+<rect x="408" y="105" width="24" height="25" rx="2" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+
+<line x1="510" y1="75" x2="510" y2="115" stroke="#888780" stroke-width="1.5"/>
+<rect x="498" y="85" width="24" height="20" rx="2" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+
+<line x1="252" y1="52" x2="252" y2="132" stroke="#B4B2A9" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="252" cy="140" r="5" fill="#534AB7"/>
+<text class="s" x="252" y="42" text-anchor="middle" dominant-baseline="central" fill="#534AB7">decide at this close</text>
+
+<line x1="318" y1="203" x2="318" y2="153" stroke="#B4B2A9" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="318" cy="145" r="5" fill="#534AB7"/>
+<text class="s" x="318" y="213" text-anchor="middle" dominant-baseline="central" fill="#534AB7">fill at this open</text>
+</svg>

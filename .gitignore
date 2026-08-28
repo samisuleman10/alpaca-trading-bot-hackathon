@@ -1,0 +1,30 @@
+# Market data is not ours to redistribute, and it is large.
+# Until Alpaca's terms are checked, nothing under data/ is committed.
+data/
+!data/.gitkeep
+
+# Secrets. There is never a reason for one of these to be in this repository.
+.env
+.env.*
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+.vercel/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

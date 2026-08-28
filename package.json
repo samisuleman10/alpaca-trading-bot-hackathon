@@ -1,0 +1,8 @@
+{
+  "name": "hackathon-tooling",
+  "private": true,
+  "description": "Local tooling for the hackathon project. Currently only the SVG to PNG diagram renderer.",
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2"
+  }
+}
