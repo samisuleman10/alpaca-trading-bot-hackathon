@@ -107,18 +107,28 @@ def examine(calendar):
         # A gap at the very start or the very end of a session, with a solid
         # run of data in between, is the shape an archive outage makes. Gaps
         # scattered through an otherwise complete session are quiet minutes.
-        leading = 0
-        for m in expected:
-            if per_minute.get(m):
-                break
-            leading += 1
-        trailing = 0
-        for m in reversed(expected):
-            if per_minute.get(m):
-                break
-            trailing += 1
+        if present:
+            leading = 0
+            for m in expected:
+                if per_minute.get(m):
+                    break
+                leading += 1
+            trailing = 0
+            for m in reversed(expected):
+                if per_minute.get(m):
+                    break
+                trailing += 1
+        else:
+            # Nothing at all, all day. The leading run and the trailing run are
+            # then the same run, and counting it at both ends is how a
+            # 390-minute session first reported 780 missing minutes and an
+            # interior gap of -390. A wholly absent day is also a different
+            # fact from a partial outage -- there is no "rest of the session"
+            # to compare against -- so it is flagged and reported separately.
+            leading, trailing = len(expected), 0
 
         rows.append({
+            "absent": not present,
             "session": day,
             "expected": len(expected),
             "present": len(present),
@@ -140,8 +150,15 @@ def render(rows):
     total_edge = sum(r["edge_gap"] for r in rows)
     total_interior = sum(r["interior_gap"] for r in rows)
     damaged = [r for r in rows if r["missing"] >= DAMAGED_SESSION_MINUTES]
+    absent = [r["session"] for r in rows if r["absent"]]
     holed = sorted((r["edge_gap"], r["session"]) for r in rows
-                   if r["edge_gap"] >= DAMAGED_SESSION_MINUTES)
+                   if r["edge_gap"] >= DAMAGED_SESSION_MINUTES and not r["absent"])
+
+    # Every missing minute is either at an edge or inside, never both and never
+    # neither. If that stops being true the split is wrong and the table below
+    # is describing something other than the data.
+    assert total_edge + total_interior == total_expected - total_present
+    assert total_interior >= 0
 
     w("# How many minutes we could actually have traded an option in")
     w("")
@@ -182,8 +199,28 @@ def render(rows):
     w("strategy's own volume-comparison window, so a hole that size silences")
     w("the rule rather than merely thinning it. **%d sessions lose %d minutes"
       % (len(holed), DAMAGED_SESSION_MINUTES))
-    w("or more to an edge gap**, which is the archive rather than the market.")
+    w("or more to an edge gap**, which is the archive rather than the market,")
+    w("and **%d session%s no option prices at all**."
+      % (len(absent), " has" if len(absent) == 1 else "s have"))
     w("")
+
+    if absent:
+        w("## Sessions with no option prices at all")
+        w("")
+        for day in absent:
+            w("- **%s** -- the market was open, we have all %d minutes of SPY's"
+              % (day, next(r["expected"] for r in rows if r["session"] == day)))
+            w("  share price, and there is not one option bar.")
+        w("")
+        w("This is the archive, not the market, and it can be checked in one")
+        w("request: ask for *daily* bars on a contract expiring 2024-02-09 and")
+        w("the answer skips from 1 February to 5 February. On the 5th that")
+        w("contract traded 32,891 times. It was not asleep on the 2nd.")
+        w("")
+        w("These days are unusable rather than thin, and the backtest should")
+        w("skip them outright rather than record a day on which the strategy")
+        w("mysteriously never traded.")
+        w("")
 
     if holed:
         w("## The worst archive gaps")
