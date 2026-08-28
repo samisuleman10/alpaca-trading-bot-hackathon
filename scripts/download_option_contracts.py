@@ -56,6 +56,7 @@ import os
 import subprocess
 import sys
 import time
+from datetime import datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -117,9 +118,15 @@ def contracts_expiring_on(day):
             "--expiration-date", day,
             "--limit", "10000",
         ]
-        # Expired contracts are 'inactive'. The default is active only, which
-        # for any past date is an empty list -- a silent, plausible zero.
-        args += ["--status", "inactive"] if day < END else ["--status", "active"]
+        # Expired contracts are 'inactive'; the default is active only, which
+        # for any past date is an empty list -- a silent, plausible zero. The
+        # comparison is against today, not against the end of our window: an
+        # expiry one day before the window's end is still an expired contract,
+        # and asking for it as 'active' returns nothing at all. That is exactly
+        # what happened on the first run, and a zero is the one answer that
+        # looks like a legitimate result while being a bug.
+        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        args += ["--status", "inactive" if day < today else "active"]
         if token:
             args += ["--page-token", token]
         payload = alpaca(args)
