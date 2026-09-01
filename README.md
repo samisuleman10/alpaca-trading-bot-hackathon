@@ -4,9 +4,9 @@ Built for the lablab.ai × Alpaca **Options Alpha Agents** hackathon,
 28 August – 4 September 2026. Everything here runs on an Alpaca **paper**
 account. No real money is involved at any point.
 
-> **Status: building.** The design is finished and committed under
-> [`docs/`](docs/). No strategy has been measured yet, and nothing has been
-> approved to trade. This line changes when that changes.
+> **Status: building.** The design is finished. No strategy has been measured
+> yet, and nothing has been approved to trade. This line changes when that
+> changes.
 
 ## What it does, in one paragraph
 
@@ -37,25 +37,27 @@ proved you asked the question correctly.**
 
 ## Design documents
 
-Read these in order. They are written for someone with no background in trading
-or statistics; every term is explained where it first appears.
+Four documents settle what this is and what would count as it working: what the
+competition demands and what is still open; the whole system and the contracts
+between its pieces; what we measured about Alpaca's market data, with the exact
+commands and the raw answers; and the two candidate strategies with the
+pass/fail rule, fixed **before** any result was read.
 
-| Document | What it settles |
-| --- | --- |
-| [`docs/requirements.md`](docs/requirements.md) | What the competition demands, and what is still open |
-| [`docs/design.md`](docs/design.md) | The whole system: the pieces, the contracts between them, the risk limits, the journal, the dashboard |
-| [`docs/options_data.md`](docs/options_data.md) | What we measured about Alpaca's data, with the exact commands and raw answers |
-| [`docs/strategy_candidates.md`](docs/strategy_candidates.md) | The two candidate strategies and the pass/fail rule, fixed **before** any result was read |
+**They are not published in this repository yet.** They exist and they are
+still the authority on what is being built — they are simply not tracked here
+during the build week. Nothing in the code depends on them being present.
 
 ## Repository layout
 
 ```
-src/agent/      the trading system  (strategy, expression, risk, journal, drivers)
-scripts/        data downloads, the live quote recorder, the analysis runners
-tests/          the guards: no look-ahead, no forbidden imports, no risk-limit growth
-dashboard/      the public page and the question box
-supabase/       the journal's table definitions
-docs/           the design, and the evidence behind it
+src/agent/       the trading system  (strategy, expression, risk, journal, drivers)
+scripts/         data downloads, the live quote recorder, the analysis runners
+tests/           the guards: no look-ahead, no forbidden imports, no risk-limit growth
+dashboard/       the public page, and the session it draws
+journal/         what the agent actually decided, one line per minute
+journal_example/ an invented session, clearly labelled, for developing the page
+results/         backtests: the trades and the summaries, with their input hashes
+.github/         the workflow that publishes the dashboard
 ```
 
 ## Two things that are deliberately absent
