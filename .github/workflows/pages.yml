@@ -1,0 +1,74 @@
+# Publish the decision record.
+#
+# What this does: every time `main` is pushed, run the test suite, and if it
+# passes, serve the `dashboard/` folder as a public web page.
+#
+# What it deliberately does NOT do: rebuild `dashboard/data.js`. That file is
+# generated on the trading machine by
+#
+#     python scripts/build_dashboard.py --journal journal
+#
+# from the journal that machine actually wrote, then read, then committed. If
+# this workflow regenerated it, the published page could differ from the one
+# that was checked before pushing, and a build failure here on deadline day
+# would leave no page at all. So the page published is exactly the page in the
+# commit -- which also means the last step of a trading day is to run that
+# command and commit the result. Forgetting it publishes a stale day, not a
+# wrong one.
+
+name: Publish dashboard
+
+on:
+  push:
+    branches: [main]
+  # Lets the page be republished by hand from the Actions tab without pushing
+  # anything -- useful if a deploy fails for a reason outside the repository.
+  workflow_dispatch:
+
+# GitHub Pages needs these two. `pages: write` to publish, `id-token: write`
+# so the deploy step can prove to Pages that it is this workflow speaking.
+# Everything else stays read-only: a workflow that can only read the code and
+# write a web page cannot do much damage if it is ever compromised.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# If two pushes land close together, let the later one win rather than racing.
+# `cancel-in-progress: false` so a half-finished deploy is never abandoned
+# mid-upload, leaving the site in a broken state.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  test:
+    # The gate. The published page always comes from a commit whose tests
+    # passed -- including the look-ahead guard and the risk-layer property
+    # test, which are the two that would matter to anyone checking the work.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'   # the floor the trading machine runs on
+      - run: python -m pip install --upgrade pip pytest
+      - run: python -m pytest tests -q
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          # Only this folder is published. The journal, the source and the
+          # results stay in the repository to be read, but the website is two
+          # files: a page and the data it draws.
+          path: dashboard
+      - id: deployment
+        uses: actions/deploy-pages@v4
