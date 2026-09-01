@@ -1,0 +1,2 @@
+{"client_order_id":"SPY-20260829T0047-vwap_reversion-1","error":null,"kind":"buy_to_open","request":{"limit_price":"2.31","qty":"1","side":"buy","symbol":"SPY250829C00642000","type":"limit"},"response":{"filled_avg_price":"2.31","status":"filled"},"session":"2026-08-29-EXAMPLE"}
+{"client_order_id":"SPY-20260829T0208-vwap_reversion-1","error":null,"kind":"buy_to_open","request":{"limit_price":"2.31","qty":"1","side":"buy","symbol":"SPY250829C00642000","type":"limit"},"response":{"filled_avg_price":"2.31","status":"filled"},"session":"2026-08-29-EXAMPLE"}
