@@ -5,7 +5,7 @@ window.DASHBOARD = {
  "sessions": [
   {
    "account": "EXAMPLE-NOT-A-REAL-ACCOUNT",
-   "closing_equity": 99943.0,
+   "closing_equity": 99976.28,
    "counts": [
     {
      "action": "no_signal",
@@ -5230,7 +5230,6009 @@ window.DASHBOARD = {
     }
    ],
    "dry_run": true,
+   "equity_curve": [
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:30:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:31:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:32:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:33:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:34:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:35:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:36:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:37:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:38:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:39:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:40:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:41:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:42:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:43:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:44:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:45:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:46:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:47:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:48:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:49:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:50:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:51:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:52:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:53:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:54:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:55:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:56:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:57:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:58:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T09:59:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:00:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:01:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:02:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:03:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:04:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:05:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:06:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:07:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:08:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:09:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:10:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:11:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:12:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:13:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:14:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:15:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-08-29T10:16:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:17:00"
+    },
+    {
+     "equity": 99996.75,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:18:00"
+    },
+    {
+     "equity": 99993.78,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:19:00"
+    },
+    {
+     "equity": 99996.12,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:20:00"
+    },
+    {
+     "equity": 99994.14,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:21:00"
+    },
+    {
+     "equity": 99993.56,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:22:00"
+    },
+    {
+     "equity": 99993.82,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:23:00"
+    },
+    {
+     "equity": 99995.53,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:24:00"
+    },
+    {
+     "equity": 99995.46,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:25:00"
+    },
+    {
+     "equity": 99996.17,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:26:00"
+    },
+    {
+     "equity": 99993.32,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:27:00"
+    },
+    {
+     "equity": 99992.61,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:28:00"
+    },
+    {
+     "equity": 99989.88,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:29:00"
+    },
+    {
+     "equity": 99991.84,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:30:00"
+    },
+    {
+     "equity": 99991.4,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:31:00"
+    },
+    {
+     "equity": 99988.13,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T10:32:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:33:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:34:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:35:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:36:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:37:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:38:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:39:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:40:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:41:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:42:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:43:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:44:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:45:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:46:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:47:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:48:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:49:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:50:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:51:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:52:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:53:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:54:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:55:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:56:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:57:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:58:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T10:59:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:00:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:01:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:02:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:03:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:04:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:05:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:06:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:07:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:08:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:09:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:10:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:11:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:12:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:13:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:14:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:15:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:16:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:17:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:18:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:19:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:20:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:21:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:22:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:23:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:24:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:25:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:26:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:27:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:28:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:29:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:30:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:31:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:32:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:33:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:34:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:35:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:36:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:37:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:38:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:39:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:40:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:41:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:42:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:43:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:44:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:45:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:46:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:47:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:48:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:49:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:50:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:51:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:52:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:53:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:54:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:55:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:56:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:57:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:58:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T11:59:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:00:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:01:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:02:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:03:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:04:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:05:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:06:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:07:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:08:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:09:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:10:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:11:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:12:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:13:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:14:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:15:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:16:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:17:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:18:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:19:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:20:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:21:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:22:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:23:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:24:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:25:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:26:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:27:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:28:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:29:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:30:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:31:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:32:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:33:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:34:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:35:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:36:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:37:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:38:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:39:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:40:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:41:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:42:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:43:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:44:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:45:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:46:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:47:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:48:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:49:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:50:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:51:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:52:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:53:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:54:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:55:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:56:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": null,
+     "t_et": "2026-08-29T12:57:00"
+    },
+    {
+     "equity": 99988.42,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T12:58:00"
+    },
+    {
+     "equity": 99987.03,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T12:59:00"
+    },
+    {
+     "equity": 99988.12,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T13:00:00"
+    },
+    {
+     "equity": 99988.27,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T13:01:00"
+    },
+    {
+     "equity": 99987.04,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T13:02:00"
+    },
+    {
+     "equity": 99985.78,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T13:03:00"
+    },
+    {
+     "equity": 99982.98,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T13:04:00"
+    },
+    {
+     "equity": 99981.19,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T13:05:00"
+    },
+    {
+     "equity": 99978.71,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T13:06:00"
+    },
+    {
+     "equity": 99980.29,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T13:07:00"
+    },
+    {
+     "equity": 99980.67,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T13:08:00"
+    },
+    {
+     "equity": 99975.42,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T13:09:00"
+    },
+    {
+     "equity": 99972.87,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T13:10:00"
+    },
+    {
+     "equity": 99975.4,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T13:11:00"
+    },
+    {
+     "equity": 99975.77,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T13:12:00"
+    },
+    {
+     "equity": 99973.17,
+     "holding": "SPY250829C00642000",
+     "t_et": "2026-08-29T13:13:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:14:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:15:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:16:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:17:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:18:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:19:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:20:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:21:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:22:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:23:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:24:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:25:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:26:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:27:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:28:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:29:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:30:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:31:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:32:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:33:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:34:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:35:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:36:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:37:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:38:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:39:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:40:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:41:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:42:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:43:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:44:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:45:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:46:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:47:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:48:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:49:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:50:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:51:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:52:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:53:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:54:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:55:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:56:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:57:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:58:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T13:59:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:00:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:01:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:02:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:03:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:04:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:05:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:06:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:07:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:08:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:09:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:10:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:11:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:12:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:13:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:14:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:15:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:16:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:17:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:18:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:19:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:20:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:21:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:22:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:23:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:24:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:25:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:26:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:27:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:28:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:29:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:30:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:31:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:32:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:33:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:34:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:35:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:36:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:37:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:38:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:39:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:40:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:41:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:42:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:43:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:44:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:45:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:46:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:47:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:48:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:49:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:50:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:51:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:52:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:53:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:54:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:55:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:56:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:57:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:58:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T14:59:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:00:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:01:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:02:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:03:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:04:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:05:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:06:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:07:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:08:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:09:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:10:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:11:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:12:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:13:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:14:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:15:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:16:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:17:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:18:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:19:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:20:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:21:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:22:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:23:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:24:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:25:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:26:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:27:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:28:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:29:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:30:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:31:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:32:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:33:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:34:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:35:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:36:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:37:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:38:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:39:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:40:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:41:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:42:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:43:00"
+    },
+    {
+     "equity": 99976.28,
+     "holding": null,
+     "t_et": "2026-08-29T15:44:00"
+    }
+   ],
    "events": [
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:30:00",
+      "bar_t_utc": "2026-08-29T13:30:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:31:00",
+      "bar_t_utc": "2026-08-29T13:31:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:32:00",
+      "bar_t_utc": "2026-08-29T13:32:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:33:00",
+      "bar_t_utc": "2026-08-29T13:33:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:34:00",
+      "bar_t_utc": "2026-08-29T13:34:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:35:00",
+      "bar_t_utc": "2026-08-29T13:35:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:36:00",
+      "bar_t_utc": "2026-08-29T13:36:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:37:00",
+      "bar_t_utc": "2026-08-29T13:37:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:38:00",
+      "bar_t_utc": "2026-08-29T13:38:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:39:00",
+      "bar_t_utc": "2026-08-29T13:39:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:40:00",
+      "bar_t_utc": "2026-08-29T13:40:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:41:00",
+      "bar_t_utc": "2026-08-29T13:41:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:42:00",
+      "bar_t_utc": "2026-08-29T13:42:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:43:00",
+      "bar_t_utc": "2026-08-29T13:43:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:44:00",
+      "bar_t_utc": "2026-08-29T13:44:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:45:00",
+      "bar_t_utc": "2026-08-29T13:45:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:46:00",
+      "bar_t_utc": "2026-08-29T13:46:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:47:00",
+      "bar_t_utc": "2026-08-29T13:47:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:48:00",
+      "bar_t_utc": "2026-08-29T13:48:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:49:00",
+      "bar_t_utc": "2026-08-29T13:49:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:50:00",
+      "bar_t_utc": "2026-08-29T13:50:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:51:00",
+      "bar_t_utc": "2026-08-29T13:51:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:52:00",
+      "bar_t_utc": "2026-08-29T13:52:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:53:00",
+      "bar_t_utc": "2026-08-29T13:53:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:54:00",
+      "bar_t_utc": "2026-08-29T13:54:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:55:00",
+      "bar_t_utc": "2026-08-29T13:55:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:56:00",
+      "bar_t_utc": "2026-08-29T13:56:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:57:00",
+      "bar_t_utc": "2026-08-29T13:57:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:58:00",
+      "bar_t_utc": "2026-08-29T13:58:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T09:59:00",
+      "bar_t_utc": "2026-08-29T13:59:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:00:00",
+      "bar_t_utc": "2026-08-29T14:00:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:01:00",
+      "bar_t_utc": "2026-08-29T14:01:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:02:00",
+      "bar_t_utc": "2026-08-29T14:02:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:03:00",
+      "bar_t_utc": "2026-08-29T14:03:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:04:00",
+      "bar_t_utc": "2026-08-29T14:04:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:05:00",
+      "bar_t_utc": "2026-08-29T14:05:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:06:00",
+      "bar_t_utc": "2026-08-29T14:06:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:07:00",
+      "bar_t_utc": "2026-08-29T14:07:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:08:00",
+      "bar_t_utc": "2026-08-29T14:08:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:09:00",
+      "bar_t_utc": "2026-08-29T14:09:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:10:00",
+      "bar_t_utc": "2026-08-29T14:10:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:11:00",
+      "bar_t_utc": "2026-08-29T14:11:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:12:00",
+      "bar_t_utc": "2026-08-29T14:12:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:13:00",
+      "bar_t_utc": "2026-08-29T14:13:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:14:00",
+      "bar_t_utc": "2026-08-29T14:14:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:15:00",
+      "bar_t_utc": "2026-08-29T14:15:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:16:00",
+      "bar_t_utc": "2026-08-29T14:16:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:17:00",
+      "bar_t_utc": "2026-08-29T14:17:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:18:00",
+      "bar_t_utc": "2026-08-29T14:18:00Z",
+      "cash": 99996.75,
+      "equity": 99996.75,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:19:00",
+      "bar_t_utc": "2026-08-29T14:19:00Z",
+      "cash": 99993.78,
+      "equity": 99993.78,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:20:00",
+      "bar_t_utc": "2026-08-29T14:20:00Z",
+      "cash": 99996.12,
+      "equity": 99996.12,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:21:00",
+      "bar_t_utc": "2026-08-29T14:21:00Z",
+      "cash": 99994.14,
+      "equity": 99994.14,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:22:00",
+      "bar_t_utc": "2026-08-29T14:22:00Z",
+      "cash": 99993.56,
+      "equity": 99993.56,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:23:00",
+      "bar_t_utc": "2026-08-29T14:23:00Z",
+      "cash": 99993.82,
+      "equity": 99993.82,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:24:00",
+      "bar_t_utc": "2026-08-29T14:24:00Z",
+      "cash": 99995.53,
+      "equity": 99995.53,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:25:00",
+      "bar_t_utc": "2026-08-29T14:25:00Z",
+      "cash": 99995.46,
+      "equity": 99995.46,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:26:00",
+      "bar_t_utc": "2026-08-29T14:26:00Z",
+      "cash": 99996.17,
+      "equity": 99996.17,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:27:00",
+      "bar_t_utc": "2026-08-29T14:27:00Z",
+      "cash": 99993.32,
+      "equity": 99993.32,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:28:00",
+      "bar_t_utc": "2026-08-29T14:28:00Z",
+      "cash": 99992.61,
+      "equity": 99992.61,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:29:00",
+      "bar_t_utc": "2026-08-29T14:29:00Z",
+      "cash": 99989.88,
+      "equity": 99989.88,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:30:00",
+      "bar_t_utc": "2026-08-29T14:30:00Z",
+      "cash": 99991.84,
+      "equity": 99991.84,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:31:00",
+      "bar_t_utc": "2026-08-29T14:31:00Z",
+      "cash": 99991.4,
+      "equity": 99991.4,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:32:00",
+      "bar_t_utc": "2026-08-29T14:32:00Z",
+      "cash": 99988.13,
+      "equity": 99988.13,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:33:00",
+      "bar_t_utc": "2026-08-29T14:33:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:34:00",
+      "bar_t_utc": "2026-08-29T14:34:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:35:00",
+      "bar_t_utc": "2026-08-29T14:35:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:36:00",
+      "bar_t_utc": "2026-08-29T14:36:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:37:00",
+      "bar_t_utc": "2026-08-29T14:37:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:38:00",
+      "bar_t_utc": "2026-08-29T14:38:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:39:00",
+      "bar_t_utc": "2026-08-29T14:39:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:40:00",
+      "bar_t_utc": "2026-08-29T14:40:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:41:00",
+      "bar_t_utc": "2026-08-29T14:41:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:42:00",
+      "bar_t_utc": "2026-08-29T14:42:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:43:00",
+      "bar_t_utc": "2026-08-29T14:43:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:44:00",
+      "bar_t_utc": "2026-08-29T14:44:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:45:00",
+      "bar_t_utc": "2026-08-29T14:45:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:46:00",
+      "bar_t_utc": "2026-08-29T14:46:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:47:00",
+      "bar_t_utc": "2026-08-29T14:47:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:48:00",
+      "bar_t_utc": "2026-08-29T14:48:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:49:00",
+      "bar_t_utc": "2026-08-29T14:49:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:50:00",
+      "bar_t_utc": "2026-08-29T14:50:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:51:00",
+      "bar_t_utc": "2026-08-29T14:51:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:52:00",
+      "bar_t_utc": "2026-08-29T14:52:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:53:00",
+      "bar_t_utc": "2026-08-29T14:53:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:54:00",
+      "bar_t_utc": "2026-08-29T14:54:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:55:00",
+      "bar_t_utc": "2026-08-29T14:55:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:56:00",
+      "bar_t_utc": "2026-08-29T14:56:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:57:00",
+      "bar_t_utc": "2026-08-29T14:57:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:58:00",
+      "bar_t_utc": "2026-08-29T14:58:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T10:59:00",
+      "bar_t_utc": "2026-08-29T14:59:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:00:00",
+      "bar_t_utc": "2026-08-29T15:00:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:01:00",
+      "bar_t_utc": "2026-08-29T15:01:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:02:00",
+      "bar_t_utc": "2026-08-29T15:02:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:03:00",
+      "bar_t_utc": "2026-08-29T15:03:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:04:00",
+      "bar_t_utc": "2026-08-29T15:04:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:05:00",
+      "bar_t_utc": "2026-08-29T15:05:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:06:00",
+      "bar_t_utc": "2026-08-29T15:06:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:07:00",
+      "bar_t_utc": "2026-08-29T15:07:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:08:00",
+      "bar_t_utc": "2026-08-29T15:08:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:09:00",
+      "bar_t_utc": "2026-08-29T15:09:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:10:00",
+      "bar_t_utc": "2026-08-29T15:10:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:11:00",
+      "bar_t_utc": "2026-08-29T15:11:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:12:00",
+      "bar_t_utc": "2026-08-29T15:12:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:13:00",
+      "bar_t_utc": "2026-08-29T15:13:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:14:00",
+      "bar_t_utc": "2026-08-29T15:14:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:15:00",
+      "bar_t_utc": "2026-08-29T15:15:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:16:00",
+      "bar_t_utc": "2026-08-29T15:16:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:17:00",
+      "bar_t_utc": "2026-08-29T15:17:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:18:00",
+      "bar_t_utc": "2026-08-29T15:18:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:19:00",
+      "bar_t_utc": "2026-08-29T15:19:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:20:00",
+      "bar_t_utc": "2026-08-29T15:20:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:21:00",
+      "bar_t_utc": "2026-08-29T15:21:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:22:00",
+      "bar_t_utc": "2026-08-29T15:22:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:23:00",
+      "bar_t_utc": "2026-08-29T15:23:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:24:00",
+      "bar_t_utc": "2026-08-29T15:24:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:25:00",
+      "bar_t_utc": "2026-08-29T15:25:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:26:00",
+      "bar_t_utc": "2026-08-29T15:26:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:27:00",
+      "bar_t_utc": "2026-08-29T15:27:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:28:00",
+      "bar_t_utc": "2026-08-29T15:28:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:29:00",
+      "bar_t_utc": "2026-08-29T15:29:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:30:00",
+      "bar_t_utc": "2026-08-29T15:30:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:31:00",
+      "bar_t_utc": "2026-08-29T15:31:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:32:00",
+      "bar_t_utc": "2026-08-29T15:32:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:33:00",
+      "bar_t_utc": "2026-08-29T15:33:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:34:00",
+      "bar_t_utc": "2026-08-29T15:34:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:35:00",
+      "bar_t_utc": "2026-08-29T15:35:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:36:00",
+      "bar_t_utc": "2026-08-29T15:36:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:37:00",
+      "bar_t_utc": "2026-08-29T15:37:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:38:00",
+      "bar_t_utc": "2026-08-29T15:38:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:39:00",
+      "bar_t_utc": "2026-08-29T15:39:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:40:00",
+      "bar_t_utc": "2026-08-29T15:40:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:41:00",
+      "bar_t_utc": "2026-08-29T15:41:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:42:00",
+      "bar_t_utc": "2026-08-29T15:42:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:43:00",
+      "bar_t_utc": "2026-08-29T15:43:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:44:00",
+      "bar_t_utc": "2026-08-29T15:44:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:45:00",
+      "bar_t_utc": "2026-08-29T15:45:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:46:00",
+      "bar_t_utc": "2026-08-29T15:46:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:47:00",
+      "bar_t_utc": "2026-08-29T15:47:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:48:00",
+      "bar_t_utc": "2026-08-29T15:48:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:49:00",
+      "bar_t_utc": "2026-08-29T15:49:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:50:00",
+      "bar_t_utc": "2026-08-29T15:50:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:51:00",
+      "bar_t_utc": "2026-08-29T15:51:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:52:00",
+      "bar_t_utc": "2026-08-29T15:52:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:53:00",
+      "bar_t_utc": "2026-08-29T15:53:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:54:00",
+      "bar_t_utc": "2026-08-29T15:54:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:55:00",
+      "bar_t_utc": "2026-08-29T15:55:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:56:00",
+      "bar_t_utc": "2026-08-29T15:56:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:57:00",
+      "bar_t_utc": "2026-08-29T15:57:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:58:00",
+      "bar_t_utc": "2026-08-29T15:58:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T11:59:00",
+      "bar_t_utc": "2026-08-29T15:59:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:00:00",
+      "bar_t_utc": "2026-08-29T16:00:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:01:00",
+      "bar_t_utc": "2026-08-29T16:01:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:02:00",
+      "bar_t_utc": "2026-08-29T16:02:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:03:00",
+      "bar_t_utc": "2026-08-29T16:03:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:04:00",
+      "bar_t_utc": "2026-08-29T16:04:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:05:00",
+      "bar_t_utc": "2026-08-29T16:05:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:06:00",
+      "bar_t_utc": "2026-08-29T16:06:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:07:00",
+      "bar_t_utc": "2026-08-29T16:07:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:08:00",
+      "bar_t_utc": "2026-08-29T16:08:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:09:00",
+      "bar_t_utc": "2026-08-29T16:09:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:10:00",
+      "bar_t_utc": "2026-08-29T16:10:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:11:00",
+      "bar_t_utc": "2026-08-29T16:11:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:12:00",
+      "bar_t_utc": "2026-08-29T16:12:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:13:00",
+      "bar_t_utc": "2026-08-29T16:13:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:14:00",
+      "bar_t_utc": "2026-08-29T16:14:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:15:00",
+      "bar_t_utc": "2026-08-29T16:15:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:16:00",
+      "bar_t_utc": "2026-08-29T16:16:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:17:00",
+      "bar_t_utc": "2026-08-29T16:17:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:18:00",
+      "bar_t_utc": "2026-08-29T16:18:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:19:00",
+      "bar_t_utc": "2026-08-29T16:19:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:20:00",
+      "bar_t_utc": "2026-08-29T16:20:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:21:00",
+      "bar_t_utc": "2026-08-29T16:21:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:22:00",
+      "bar_t_utc": "2026-08-29T16:22:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:23:00",
+      "bar_t_utc": "2026-08-29T16:23:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:24:00",
+      "bar_t_utc": "2026-08-29T16:24:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:25:00",
+      "bar_t_utc": "2026-08-29T16:25:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:26:00",
+      "bar_t_utc": "2026-08-29T16:26:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:27:00",
+      "bar_t_utc": "2026-08-29T16:27:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:28:00",
+      "bar_t_utc": "2026-08-29T16:28:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:29:00",
+      "bar_t_utc": "2026-08-29T16:29:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:30:00",
+      "bar_t_utc": "2026-08-29T16:30:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:31:00",
+      "bar_t_utc": "2026-08-29T16:31:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:32:00",
+      "bar_t_utc": "2026-08-29T16:32:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:33:00",
+      "bar_t_utc": "2026-08-29T16:33:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:34:00",
+      "bar_t_utc": "2026-08-29T16:34:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:35:00",
+      "bar_t_utc": "2026-08-29T16:35:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:36:00",
+      "bar_t_utc": "2026-08-29T16:36:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:37:00",
+      "bar_t_utc": "2026-08-29T16:37:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:38:00",
+      "bar_t_utc": "2026-08-29T16:38:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:39:00",
+      "bar_t_utc": "2026-08-29T16:39:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:40:00",
+      "bar_t_utc": "2026-08-29T16:40:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:41:00",
+      "bar_t_utc": "2026-08-29T16:41:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:42:00",
+      "bar_t_utc": "2026-08-29T16:42:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:43:00",
+      "bar_t_utc": "2026-08-29T16:43:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:44:00",
+      "bar_t_utc": "2026-08-29T16:44:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:45:00",
+      "bar_t_utc": "2026-08-29T16:45:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:46:00",
+      "bar_t_utc": "2026-08-29T16:46:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:47:00",
+      "bar_t_utc": "2026-08-29T16:47:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:48:00",
+      "bar_t_utc": "2026-08-29T16:48:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:49:00",
+      "bar_t_utc": "2026-08-29T16:49:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:50:00",
+      "bar_t_utc": "2026-08-29T16:50:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:51:00",
+      "bar_t_utc": "2026-08-29T16:51:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:52:00",
+      "bar_t_utc": "2026-08-29T16:52:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:53:00",
+      "bar_t_utc": "2026-08-29T16:53:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:54:00",
+      "bar_t_utc": "2026-08-29T16:54:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:55:00",
+      "bar_t_utc": "2026-08-29T16:55:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:56:00",
+      "bar_t_utc": "2026-08-29T16:56:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:57:00",
+      "bar_t_utc": "2026-08-29T16:57:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:58:00",
+      "bar_t_utc": "2026-08-29T16:58:00Z",
+      "cash": 99988.42,
+      "equity": 99988.42,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T12:59:00",
+      "bar_t_utc": "2026-08-29T16:59:00Z",
+      "cash": 99987.03,
+      "equity": 99987.03,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:00:00",
+      "bar_t_utc": "2026-08-29T17:00:00Z",
+      "cash": 99988.12,
+      "equity": 99988.12,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:01:00",
+      "bar_t_utc": "2026-08-29T17:01:00Z",
+      "cash": 99988.27,
+      "equity": 99988.27,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:02:00",
+      "bar_t_utc": "2026-08-29T17:02:00Z",
+      "cash": 99987.04,
+      "equity": 99987.04,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:03:00",
+      "bar_t_utc": "2026-08-29T17:03:00Z",
+      "cash": 99985.78,
+      "equity": 99985.78,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:04:00",
+      "bar_t_utc": "2026-08-29T17:04:00Z",
+      "cash": 99982.98,
+      "equity": 99982.98,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:05:00",
+      "bar_t_utc": "2026-08-29T17:05:00Z",
+      "cash": 99981.19,
+      "equity": 99981.19,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:06:00",
+      "bar_t_utc": "2026-08-29T17:06:00Z",
+      "cash": 99978.71,
+      "equity": 99978.71,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:07:00",
+      "bar_t_utc": "2026-08-29T17:07:00Z",
+      "cash": 99980.29,
+      "equity": 99980.29,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:08:00",
+      "bar_t_utc": "2026-08-29T17:08:00Z",
+      "cash": 99980.67,
+      "equity": 99980.67,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:09:00",
+      "bar_t_utc": "2026-08-29T17:09:00Z",
+      "cash": 99975.42,
+      "equity": 99975.42,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:10:00",
+      "bar_t_utc": "2026-08-29T17:10:00Z",
+      "cash": 99972.87,
+      "equity": 99972.87,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:11:00",
+      "bar_t_utc": "2026-08-29T17:11:00Z",
+      "cash": 99975.4,
+      "equity": 99975.4,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:12:00",
+      "bar_t_utc": "2026-08-29T17:12:00Z",
+      "cash": 99975.77,
+      "equity": 99975.77,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:13:00",
+      "bar_t_utc": "2026-08-29T17:13:00Z",
+      "cash": 99973.17,
+      "equity": 99973.17,
+      "holding": "SPY250829C00642000"
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:14:00",
+      "bar_t_utc": "2026-08-29T17:14:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:15:00",
+      "bar_t_utc": "2026-08-29T17:15:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:16:00",
+      "bar_t_utc": "2026-08-29T17:16:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:17:00",
+      "bar_t_utc": "2026-08-29T17:17:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:18:00",
+      "bar_t_utc": "2026-08-29T17:18:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:19:00",
+      "bar_t_utc": "2026-08-29T17:19:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:20:00",
+      "bar_t_utc": "2026-08-29T17:20:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:21:00",
+      "bar_t_utc": "2026-08-29T17:21:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:22:00",
+      "bar_t_utc": "2026-08-29T17:22:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:23:00",
+      "bar_t_utc": "2026-08-29T17:23:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:24:00",
+      "bar_t_utc": "2026-08-29T17:24:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:25:00",
+      "bar_t_utc": "2026-08-29T17:25:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:26:00",
+      "bar_t_utc": "2026-08-29T17:26:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:27:00",
+      "bar_t_utc": "2026-08-29T17:27:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:28:00",
+      "bar_t_utc": "2026-08-29T17:28:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:29:00",
+      "bar_t_utc": "2026-08-29T17:29:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:30:00",
+      "bar_t_utc": "2026-08-29T17:30:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:31:00",
+      "bar_t_utc": "2026-08-29T17:31:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:32:00",
+      "bar_t_utc": "2026-08-29T17:32:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:33:00",
+      "bar_t_utc": "2026-08-29T17:33:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:34:00",
+      "bar_t_utc": "2026-08-29T17:34:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:35:00",
+      "bar_t_utc": "2026-08-29T17:35:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:36:00",
+      "bar_t_utc": "2026-08-29T17:36:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:37:00",
+      "bar_t_utc": "2026-08-29T17:37:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:38:00",
+      "bar_t_utc": "2026-08-29T17:38:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:39:00",
+      "bar_t_utc": "2026-08-29T17:39:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:40:00",
+      "bar_t_utc": "2026-08-29T17:40:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:41:00",
+      "bar_t_utc": "2026-08-29T17:41:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:42:00",
+      "bar_t_utc": "2026-08-29T17:42:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:43:00",
+      "bar_t_utc": "2026-08-29T17:43:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:44:00",
+      "bar_t_utc": "2026-08-29T17:44:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:45:00",
+      "bar_t_utc": "2026-08-29T17:45:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:46:00",
+      "bar_t_utc": "2026-08-29T17:46:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:47:00",
+      "bar_t_utc": "2026-08-29T17:47:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:48:00",
+      "bar_t_utc": "2026-08-29T17:48:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:49:00",
+      "bar_t_utc": "2026-08-29T17:49:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:50:00",
+      "bar_t_utc": "2026-08-29T17:50:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:51:00",
+      "bar_t_utc": "2026-08-29T17:51:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:52:00",
+      "bar_t_utc": "2026-08-29T17:52:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:53:00",
+      "bar_t_utc": "2026-08-29T17:53:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:54:00",
+      "bar_t_utc": "2026-08-29T17:54:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:55:00",
+      "bar_t_utc": "2026-08-29T17:55:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:56:00",
+      "bar_t_utc": "2026-08-29T17:56:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:57:00",
+      "bar_t_utc": "2026-08-29T17:57:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:58:00",
+      "bar_t_utc": "2026-08-29T17:58:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T13:59:00",
+      "bar_t_utc": "2026-08-29T17:59:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:00:00",
+      "bar_t_utc": "2026-08-29T18:00:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:01:00",
+      "bar_t_utc": "2026-08-29T18:01:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:02:00",
+      "bar_t_utc": "2026-08-29T18:02:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:03:00",
+      "bar_t_utc": "2026-08-29T18:03:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:04:00",
+      "bar_t_utc": "2026-08-29T18:04:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:05:00",
+      "bar_t_utc": "2026-08-29T18:05:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:06:00",
+      "bar_t_utc": "2026-08-29T18:06:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:07:00",
+      "bar_t_utc": "2026-08-29T18:07:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:08:00",
+      "bar_t_utc": "2026-08-29T18:08:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:09:00",
+      "bar_t_utc": "2026-08-29T18:09:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:10:00",
+      "bar_t_utc": "2026-08-29T18:10:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:11:00",
+      "bar_t_utc": "2026-08-29T18:11:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:12:00",
+      "bar_t_utc": "2026-08-29T18:12:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:13:00",
+      "bar_t_utc": "2026-08-29T18:13:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:14:00",
+      "bar_t_utc": "2026-08-29T18:14:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:15:00",
+      "bar_t_utc": "2026-08-29T18:15:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:16:00",
+      "bar_t_utc": "2026-08-29T18:16:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:17:00",
+      "bar_t_utc": "2026-08-29T18:17:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:18:00",
+      "bar_t_utc": "2026-08-29T18:18:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:19:00",
+      "bar_t_utc": "2026-08-29T18:19:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:20:00",
+      "bar_t_utc": "2026-08-29T18:20:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:21:00",
+      "bar_t_utc": "2026-08-29T18:21:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:22:00",
+      "bar_t_utc": "2026-08-29T18:22:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:23:00",
+      "bar_t_utc": "2026-08-29T18:23:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:24:00",
+      "bar_t_utc": "2026-08-29T18:24:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:25:00",
+      "bar_t_utc": "2026-08-29T18:25:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:26:00",
+      "bar_t_utc": "2026-08-29T18:26:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:27:00",
+      "bar_t_utc": "2026-08-29T18:27:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:28:00",
+      "bar_t_utc": "2026-08-29T18:28:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:29:00",
+      "bar_t_utc": "2026-08-29T18:29:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:30:00",
+      "bar_t_utc": "2026-08-29T18:30:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:31:00",
+      "bar_t_utc": "2026-08-29T18:31:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:32:00",
+      "bar_t_utc": "2026-08-29T18:32:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:33:00",
+      "bar_t_utc": "2026-08-29T18:33:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:34:00",
+      "bar_t_utc": "2026-08-29T18:34:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:35:00",
+      "bar_t_utc": "2026-08-29T18:35:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:36:00",
+      "bar_t_utc": "2026-08-29T18:36:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:37:00",
+      "bar_t_utc": "2026-08-29T18:37:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:38:00",
+      "bar_t_utc": "2026-08-29T18:38:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:39:00",
+      "bar_t_utc": "2026-08-29T18:39:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:40:00",
+      "bar_t_utc": "2026-08-29T18:40:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:41:00",
+      "bar_t_utc": "2026-08-29T18:41:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:42:00",
+      "bar_t_utc": "2026-08-29T18:42:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:43:00",
+      "bar_t_utc": "2026-08-29T18:43:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:44:00",
+      "bar_t_utc": "2026-08-29T18:44:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:45:00",
+      "bar_t_utc": "2026-08-29T18:45:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:46:00",
+      "bar_t_utc": "2026-08-29T18:46:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:47:00",
+      "bar_t_utc": "2026-08-29T18:47:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:48:00",
+      "bar_t_utc": "2026-08-29T18:48:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:49:00",
+      "bar_t_utc": "2026-08-29T18:49:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:50:00",
+      "bar_t_utc": "2026-08-29T18:50:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:51:00",
+      "bar_t_utc": "2026-08-29T18:51:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:52:00",
+      "bar_t_utc": "2026-08-29T18:52:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:53:00",
+      "bar_t_utc": "2026-08-29T18:53:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:54:00",
+      "bar_t_utc": "2026-08-29T18:54:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:55:00",
+      "bar_t_utc": "2026-08-29T18:55:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:56:00",
+      "bar_t_utc": "2026-08-29T18:56:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:57:00",
+      "bar_t_utc": "2026-08-29T18:57:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:58:00",
+      "bar_t_utc": "2026-08-29T18:58:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T14:59:00",
+      "bar_t_utc": "2026-08-29T18:59:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:00:00",
+      "bar_t_utc": "2026-08-29T19:00:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:01:00",
+      "bar_t_utc": "2026-08-29T19:01:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:02:00",
+      "bar_t_utc": "2026-08-29T19:02:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:03:00",
+      "bar_t_utc": "2026-08-29T19:03:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:04:00",
+      "bar_t_utc": "2026-08-29T19:04:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:05:00",
+      "bar_t_utc": "2026-08-29T19:05:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:06:00",
+      "bar_t_utc": "2026-08-29T19:06:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:07:00",
+      "bar_t_utc": "2026-08-29T19:07:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:08:00",
+      "bar_t_utc": "2026-08-29T19:08:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:09:00",
+      "bar_t_utc": "2026-08-29T19:09:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:10:00",
+      "bar_t_utc": "2026-08-29T19:10:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:11:00",
+      "bar_t_utc": "2026-08-29T19:11:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:12:00",
+      "bar_t_utc": "2026-08-29T19:12:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:13:00",
+      "bar_t_utc": "2026-08-29T19:13:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:14:00",
+      "bar_t_utc": "2026-08-29T19:14:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:15:00",
+      "bar_t_utc": "2026-08-29T19:15:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:16:00",
+      "bar_t_utc": "2026-08-29T19:16:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:17:00",
+      "bar_t_utc": "2026-08-29T19:17:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:18:00",
+      "bar_t_utc": "2026-08-29T19:18:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:19:00",
+      "bar_t_utc": "2026-08-29T19:19:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:20:00",
+      "bar_t_utc": "2026-08-29T19:20:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:21:00",
+      "bar_t_utc": "2026-08-29T19:21:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:22:00",
+      "bar_t_utc": "2026-08-29T19:22:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:23:00",
+      "bar_t_utc": "2026-08-29T19:23:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:24:00",
+      "bar_t_utc": "2026-08-29T19:24:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:25:00",
+      "bar_t_utc": "2026-08-29T19:25:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:26:00",
+      "bar_t_utc": "2026-08-29T19:26:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:27:00",
+      "bar_t_utc": "2026-08-29T19:27:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:28:00",
+      "bar_t_utc": "2026-08-29T19:28:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:29:00",
+      "bar_t_utc": "2026-08-29T19:29:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:30:00",
+      "bar_t_utc": "2026-08-29T19:30:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:31:00",
+      "bar_t_utc": "2026-08-29T19:31:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:32:00",
+      "bar_t_utc": "2026-08-29T19:32:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:33:00",
+      "bar_t_utc": "2026-08-29T19:33:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:34:00",
+      "bar_t_utc": "2026-08-29T19:34:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:35:00",
+      "bar_t_utc": "2026-08-29T19:35:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:36:00",
+      "bar_t_utc": "2026-08-29T19:36:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:37:00",
+      "bar_t_utc": "2026-08-29T19:37:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:38:00",
+      "bar_t_utc": "2026-08-29T19:38:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:39:00",
+      "bar_t_utc": "2026-08-29T19:39:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:40:00",
+      "bar_t_utc": "2026-08-29T19:40:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:41:00",
+      "bar_t_utc": "2026-08-29T19:41:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:42:00",
+      "bar_t_utc": "2026-08-29T19:42:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:43:00",
+      "bar_t_utc": "2026-08-29T19:43:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-08-29T15:44:00",
+      "bar_t_utc": "2026-08-29T19:44:00Z",
+      "cash": 99976.28,
+      "equity": 99976.28,
+      "holding": null
+     },
+     "event": "equity",
+     "session": "2026-08-29-EXAMPLE"
+    },
     {
      "detail": {
       "account_number": "EXAMPLE-NOT-A-REAL-ACCOUNT",
@@ -5251,7 +11253,7 @@ window.DASHBOARD = {
     },
     {
      "detail": {
-      "closing_equity": 99943.0,
+      "closing_equity": 99976.28,
       "minutes_processed": 375,
       "opening_equity": 100000.0,
       "still_holding": null
@@ -5342,7 +11344,7 @@ window.DASHBOARD = {
      "session": "2026-08-29-EXAMPLE"
     }
    ],
-   "pnl": -57.0,
+   "pnl": -23.72,
    "refusal_reasons": [
     {
      "n": 3,

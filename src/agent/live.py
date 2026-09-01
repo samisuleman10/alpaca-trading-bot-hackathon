@@ -243,6 +243,32 @@ class Trader:
         self._close(position, bar, action, reason, {"stop": stop, "target": target,
                                                     "minutes_held": float(held)})
 
+    def sample_equity(self, bar) -> None:
+        """Write down what the account is worth, once a minute.
+
+        Not decoration. While an option position is open, the account's value
+        moves with that contract's own price, so a curve drawn from real
+        samples shows the dip in the middle of a trade -- exactly the part an
+        opening-and-closing pair hides. Two numbers a day cannot be drawn as a
+        line without inventing everything between them.
+
+        A failed read is journalled and skipped. A missing point on a chart
+        must never be a reason to stop trading.
+        """
+        try:
+            account = self.broker.account()
+        except BrokerError as exc:
+            self.journal.session_event(
+                "equity_unavailable", {"bar_t_et": bar.t_et, "error": str(exc)})
+            return
+        self.journal.session_event("equity", {
+            "bar_t_et": bar.t_et,
+            "bar_t_utc": bar.t_utc,
+            "equity": float(account.get("equity", 0.0) or 0.0),
+            "cash": float(account.get("cash", 0.0) or 0.0),
+            "holding": self.position.contract if self.position else None,
+        })
+
     def _minutes_held(self, bar) -> int:
         """Wall-clock minutes, never a count of bars.
 
@@ -553,6 +579,7 @@ def run(config: Config, journal_root: str, dry_run: bool = False,
         window = BarWindow(bars, len(bars) - 1)
         try:
             trader.on_bar(window)
+            trader.sample_equity(window.current)
         except NotPaperAccount as exc:
             journal.session_event("halted", {"reason": str(exc)})
             raise

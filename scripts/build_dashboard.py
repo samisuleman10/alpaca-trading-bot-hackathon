@@ -123,6 +123,20 @@ def summarise(root, session):
         if row.get("action") in ("declined", "refused"):
             refusal_reasons[row.get("reason", "")] += 1
 
+    # The account's value as actually sampled, minute by minute. Two numbers a
+    # day cannot be drawn as a line, so if the trader recorded no samples this
+    # comes back empty and the page says so rather than inventing the middle.
+    equity_curve = []
+    for row in events:
+        if row.get("event") != "equity":
+            continue
+        detail = row.get("detail") or {}
+        equity_curve.append({
+            "t_et": detail.get("bar_t_et"),
+            "equity": detail.get("equity"),
+            "holding": detail.get("holding"),
+        })
+
     return {
         "session": session,
         "account": (start.get("detail") or {}).get("account_number"),
@@ -131,6 +145,7 @@ def summarise(root, session):
         "dry_run": bool((start.get("detail") or {}).get("dry_run")),
         "limits": (start.get("detail") or {}).get("limits") or {},
         "opening_equity": opening,
+        "equity_curve": equity_curve,
         "closing_equity": closing,
         "pnl": (None if opening is None or closing is None
                 else round(float(closing) - float(opening), 2)),
@@ -198,18 +213,41 @@ def make_example(root):
         dec.append(base)
 
     price, held_until = 641.0, -1
+    equity, held_contract, entry_price = 100000.0, None, None
+
+    def sample(minute, close):
+        """What the account is worth this minute.
+
+        Between trades it does not move: the cash just sits there. While a
+        contract is held it moves with that contract, and an option's price
+        swings several times harder than the share it follows -- which is why
+        the curve has visible steps only around the two trades.
+        """
+        hour, mins = 9 + (30 + minute) // 60, (30 + minute) % 60
+        events.append({"event": "equity", "session": session, "detail": {
+            "bar_t_et": "2026-08-29T%02d:%02d:00" % (hour, mins),
+            "bar_t_utc": "2026-08-29T%02d:%02d:00Z" % (hour + 4, mins),
+            "equity": round(equity, 2), "cash": round(equity, 2),
+            "holding": held_contract}})
+
     for minute in range(0, 375):
         price += rng.gauss(0, 0.09)
         gap = rng.gauss(0, 0.28)
+        if held_contract and entry_price is not None:
+            # Roughly 25 shares' worth of sensitivity per contract held.
+            equity += (price - entry_price) * 25.0
+            entry_price = price
         if minute <= held_until:
             row(minute, "holding", "Holding SPY250829C00642000; the stop is 638.10 "
                 "and the target is 642.85.", price)
+            sample(minute, price)
             continue
         if minute == held_until + 1 and held_until > 0:
             row(minute, "exit_time", "Sold after 15 minutes: the position had been "
                 "held long enough and neither the stop nor the target was reached.",
                 price)
-            held_until = -1
+            held_until, held_contract, entry_price = -1, None, None
+            sample(minute, price)
             continue
         if gap < -0.55 and minute < 340:
             if rng.random() < 0.45:
@@ -234,10 +272,12 @@ def make_example(root):
                     "error": None, "session": session,
                 })
                 held_until = minute + 15
+                held_contract, entry_price = "SPY250829C00642000", price
         else:
             row(minute, "no_signal", "Price is close to the day's average, so there is "
                 "nothing to lean against.", price,
                 evidence={"vwap_gap_pct": round(gap * 0.1, 3)})
+        sample(minute, price)
 
     events.append({"event": "start", "session": session, "detail": {
         "equity": 100000.0, "account_number": "EXAMPLE-NOT-A-REAL-ACCOUNT",
@@ -246,7 +286,7 @@ def make_example(root):
         "limits": {"max_premium_per_trade": 250.0, "max_open_positions": 1,
                    "daily_loss_limit": 500.0, "flat_by": "15:45"}}})
     events.append({"event": "end", "session": session, "detail": {
-        "minutes_processed": len(dec), "closing_equity": 99943.0,
+        "minutes_processed": len(dec), "closing_equity": round(equity, 2),
         "opening_equity": 100000.0, "still_holding": None}})
     events.append({"event": "flattened", "session": session,
                    "detail": {"attempt": 1, "outcome": "account is flat"}})

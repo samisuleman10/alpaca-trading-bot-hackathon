@@ -46,6 +46,11 @@
   .m-declined,.m-refused,.m-no_chain{fill:none;stroke:var(--bad)}
   .m-shrunk,.m-missed,.m-error,.m-entry_failed,.m-exit_failed{fill:none;stroke:var(--warn)}
   .legend{margin-top:10px;font-size:12.5px;color:var(--muted)}
+  .muted{color:var(--muted);font-size:13.5px;margin:0;line-height:1.55}
+  .chart .eqline{fill:none;stroke:var(--accent);stroke-width:1.6}
+  .chart .flat{stroke:var(--muted);stroke-width:1;stroke-dasharray:4 4}
+  .chart .held{fill:var(--chip)}
+  .chart .eqfill{fill:var(--accent);opacity:.10}
   .legend b{color:var(--ink);font-weight:600}
   .swatch{display:inline-block;width:9px;height:9px;border-radius:2px;
           margin:0 5px 0 12px;vertical-align:baseline}
@@ -144,6 +149,7 @@ function render(){
     "</div>";
 
   h += chart(s);
+  h += equityChart(s);
   h += funnel(s);
 
   h += "<h2>Ask it something</h2>";
@@ -276,6 +282,93 @@ function chart(s){
     sw("var(--muted)") + "square — sold and closed the position" +
     "<span class='swatch' style='border:1.5px solid var(--bad);background:none'></span>" +
     "hollow circle — formed a view and was stopped (price, or a risk rule)" +
+    "</div></div>";
+}
+
+/* ---------------------------------------------------------------------------
+   What the account was worth, minute by minute.
+
+   Every point here was read from the broker at the time it is plotted. If the
+   trader recorded no samples -- an older session, or a run where the account
+   call kept failing -- this draws nothing and says so. A line between the
+   opening and closing figure would look like a measurement and be a guess.
+--------------------------------------------------------------------------- */
+function equityChart(s){
+  const pts = (s.equity_curve || []).filter(p => typeof p.equity === "number");
+  if(pts.length < 2){
+    return "<h2>What the account was worth</h2><div class='panel'><p class='muted'>" +
+      "No minute-by-minute samples were recorded for this session, so there is no " +
+      "curve to draw. The journal holds only the opening and closing figures — " +
+      "two points — and joining them with a line would invent every minute in " +
+      "between. That is a picture of an assumption, not of a day, so the page " +
+      "leaves it out.</p></div>";
+  }
+
+  const W = 900, H = 220, L = 62, R = 14, T = 16, B = 28;
+  const vals = pts.map(p => p.equity);
+  const open = s.opening_equity || vals[0];
+  let lo = Math.min.apply(null, vals.concat([open]));
+  let hi = Math.max.apply(null, vals.concat([open]));
+  const pad = (hi - lo) * 0.18 || 1;
+  lo -= pad; hi += pad;
+  const X = i => L + (W - L - R) * i / (pts.length - 1);
+  const Y = v => T + (H - T - B) * (1 - (v - lo) / (hi - lo));
+
+  let g = "";
+  for(let k = 0; k <= 3; k++){
+    const v = lo + (hi - lo) * k / 3, y = Y(v);
+    g += "<line class='grid' x1='" + L + "' y1='" + y.toFixed(1) + "' x2='" + (W-R) +
+         "' y2='" + y.toFixed(1) + "'/>" +
+         "<text class='axis' x='" + (L-6) + "' y='" + (y+3).toFixed(1) +
+         "' text-anchor='end'>$" + num(Math.round(v)) + "</text>";
+  }
+  pts.forEach((p, i) => {
+    if(hhmm(p.t_et).slice(3) !== "00") return;
+    g += "<text class='axis' x='" + X(i).toFixed(1) + "' y='" + (H-8) +
+         "' text-anchor='middle'>" + esc(hhmm(p.t_et)) + "</text>";
+  });
+
+  // Shade the stretches where a contract was actually held. Everywhere else
+  // the account is cash sitting still, which is why the line is flat there.
+  let bands = "", from = -1;
+  for(let i = 0; i <= pts.length; i++){
+    const held = i < pts.length && !!pts[i].holding;
+    if(held && from < 0) from = i;
+    if(!held && from >= 0){
+      const x0 = X(from), x1 = X(Math.max(from, i - 1));
+      bands += "<rect class='held' x='" + x0.toFixed(1) + "' y='" + T +
+               "' width='" + Math.max(2, x1 - x0).toFixed(1) + "' height='" +
+               (H - T - B) + "'><title>holding " + esc(pts[from].holding || "") +
+               "</title></rect>";
+      from = -1;
+    }
+  }
+
+  const line = pts.map((p, i) => X(i).toFixed(1) + "," + Y(p.equity).toFixed(1)).join(" ");
+  const base = Y(open);
+  const area = "<polygon class='eqfill' points='" + X(0).toFixed(1) + "," + base.toFixed(1) +
+               " " + line + " " + X(pts.length-1).toFixed(1) + "," + base.toFixed(1) + "'/>";
+  const flat = "<line class='flat' x1='" + L + "' y1='" + base.toFixed(1) + "' x2='" +
+               (W-R) + "' y2='" + base.toFixed(1) + "'/>" +
+               "<text class='axis' x='" + (W-R) + "' y='" + (base-5).toFixed(1) +
+               "' text-anchor='end'>started here — " + money(open) + "</text>";
+
+  const last = vals[vals.length - 1], change = last - open;
+  const trough = Math.min.apply(null, vals);
+  const shaded = pts.filter(p => !!p.holding).length;
+
+  return "<h2>What the account was worth</h2>" +
+    "<div class='panel chart'><svg viewBox='0 0 " + W + " " + H + "' role='img' " +
+    "aria-label='Account value sampled every minute through the session'>" +
+    bands + g + area + flat + "<polyline class='eqline' points='" + line + "'/></svg>" +
+    "<div class='legend'>Read from the broker once a minute, " + num(pts.length) +
+    " times. The dashed line is where the day started; the shaded columns are the " +
+    num(shaded) + " minutes a contract was actually held — everywhere else the " +
+    "account is cash sitting still, which is why the line is flat. " +
+    "It ended at <b>" + money(last) + "</b>, " +
+    (change >= 0 ? "up " : "down ") + money(Math.abs(change)) +
+    ", having been as low as " + money(trough) + " along the way. " +
+    "That dip is the reason for sampling: a start-and-end pair cannot show it." +
     "</div></div>";
 }
 
