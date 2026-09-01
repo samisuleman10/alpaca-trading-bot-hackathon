@@ -486,6 +486,10 @@ def run(config: Config, journal_root: str, dry_run: bool = False,
         seconds = _seconds_until_open(clock)
         if seconds is None or seconds > MAX_WAIT_FOR_OPEN_SECONDS:
             journal.session_event("not_open", {"clock": clock})
+            print("The market is closed and does not open again soon, so there is "
+                  "nothing to trade.")
+            print("  next open : %s" % clock.get("next_open"))
+            print("  now       : %s New York" % _now_et().strftime("%H:%M:%S"))
             return 0
         # Started early. Wait rather than exit: a trader that quits silently
         # because it was launched ten minutes before the bell costs a whole
@@ -494,9 +498,20 @@ def run(config: Config, journal_root: str, dry_run: bool = False,
             "next_open": clock.get("next_open"),
             "seconds_to_wait": round(seconds),
         })
+        print("The market opens in %d minutes. Waiting rather than exiting -- "
+              "leave this running." % round(seconds / 60.0))
         time.sleep(seconds + 2.0)
 
     trader.start(session)
+    print("Trading %s on the %s feed, %s." % (
+        config.underlying, config.feed,
+        "DRY RUN -- no orders will be sent" if dry_run else "live"))
+    print("  account   : %s" % config.expected_account)
+    print("  equity    : $%s" % "{:,.2f}".format(trader.opening_equity))
+    print("  per trade : $%s at risk, %d position(s) at once, flat by %s New York" % (
+        "{:,.0f}".format(config.risk.max_premium_per_trade),
+        config.risk.max_open_positions, config.risk.flat_by))
+    print("")
     processed = 0
     last_seen = None
 
