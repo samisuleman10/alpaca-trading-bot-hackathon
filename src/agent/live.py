@@ -431,6 +431,28 @@ class Trader:
         return day.strftime("%Y-%m-%d")
 
 
+MAX_WAIT_FOR_OPEN_SECONDS = 4 * 60 * 60
+
+
+def _seconds_until_open(clock):
+    """How long until the bell, or None if that is not a question we can answer.
+
+    Alpaca reports `next_open` as a full timestamp with its offset attached.
+    A value in the past, or one we cannot read, returns None -- the caller
+    treats that as "do not wait", because guessing about market hours is how a
+    system ends up trading a holiday.
+    """
+    raw = clock.get("next_open")
+    if not raw:
+        return None
+    try:
+        opens_at = datetime.fromisoformat(raw)
+    except ValueError:
+        return None
+    seconds = (opens_at - datetime.now(opens_at.tzinfo)).total_seconds()
+    return seconds if seconds > 0 else None
+
+
 def run(config: Config, journal_root: str, dry_run: bool = False,
         max_minutes: int = 0) -> int:
     """Run one trading session, minute by minute, until the close.
@@ -446,8 +468,18 @@ def run(config: Config, journal_root: str, dry_run: bool = False,
     trader = Trader(config, journal, broker, dry_run=dry_run)
 
     if not clock.get("is_open"):
-        journal.session_event("not_open", {"clock": clock})
-        return 0
+        seconds = _seconds_until_open(clock)
+        if seconds is None or seconds > MAX_WAIT_FOR_OPEN_SECONDS:
+            journal.session_event("not_open", {"clock": clock})
+            return 0
+        # Started early. Wait rather than exit: a trader that quits silently
+        # because it was launched ten minutes before the bell costs a whole
+        # session, and nobody finds out until the session is over.
+        journal.session_event("waiting_for_open", {
+            "next_open": clock.get("next_open"),
+            "seconds_to_wait": round(seconds),
+        })
+        time.sleep(seconds + 2.0)
 
     trader.start(session)
     processed = 0
