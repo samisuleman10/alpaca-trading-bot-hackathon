@@ -64,6 +64,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+        with:
+          # Switch Pages on if it is not on already, rather than failing with
+          # "Get Pages site failed" and waiting for somebody to click a menu.
+          # Publishing is the entire purpose of this workflow, so a workflow
+          # that cannot start publishing without a human is not finished.
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           # Only this folder is published. The journal, the source and the
