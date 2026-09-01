@@ -5243,7 +5243,8 @@ window.DASHBOARD = {
        "max_open_positions": 1,
        "max_premium_per_trade": 250.0
       },
-      "status": "ACTIVE"
+      "status": "ACTIVE",
+      "underlying": "SPY"
      },
      "event": "start",
      "session": "2026-08-29-EXAMPLE"
@@ -5348,7 +5349,8 @@ window.DASHBOARD = {
      "reason": "The gap between the buying and selling price of SPY250829C00642000 is 6.1% of what the contract is worth, and we pay that twice. Too expensive to trade."
     }
    ],
-   "session": "2026-08-29-EXAMPLE"
+   "session": "2026-08-29-EXAMPLE",
+   "underlying": "SPY"
   }
  ]
 };

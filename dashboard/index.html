@@ -7,12 +7,12 @@
 <style>
   :root{
     --bg:#fbfbfa; --panel:#fff; --ink:#1a1a18; --muted:#6b6b66; --line:#e6e4df;
-    --accent:#2f6f4f; --warn:#9a5b00; --bad:#a33a2a; --chip:#f1efea;
+    --accent:#2f6f4f; --warn:#9a5b00; --bad:#a33a2a; --chip:#f1efea; --price:#8a8780;
   }
   @media (prefers-color-scheme: dark){
     :root{ --bg:#141412; --panel:#1c1c1a; --ink:#eceae4; --muted:#9a978f;
            --line:#2e2d2a; --accent:#7bbd95; --warn:#d79a4a; --bad:#e0806f;
-           --chip:#262523; }
+           --chip:#262523; --price:#77746d; }
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);
@@ -32,7 +32,26 @@
   .stat span{color:var(--muted);font-size:12.5px}
   .chip{display:inline-block;background:var(--chip);border-radius:999px;
         padding:2px 9px;font-size:12px;color:var(--muted);margin-right:6px}
-  .funnel div.step{display:flex;align-items:baseline;gap:12px;padding:7px 0;
+
+  /* --- the day as a picture --- */
+  .chart svg{width:100%;height:auto;display:block}
+  .chart .grid{stroke:var(--line);stroke-width:1}
+  .chart .axis{fill:var(--muted);font-size:10px}
+  .chart .line{fill:none;stroke:var(--price);stroke-width:1.4}
+  .chart .m{stroke-width:1.5}
+  .m-entered{fill:var(--accent);stroke:var(--accent)}
+  .m-exit_target{fill:var(--accent);stroke:var(--accent)}
+  .m-exit_stop{fill:var(--bad);stroke:var(--bad)}
+  .m-exit_time,.m-exit_flat_by{fill:var(--muted);stroke:var(--muted)}
+  .m-declined,.m-refused,.m-no_chain{fill:none;stroke:var(--bad)}
+  .m-shrunk,.m-missed,.m-error,.m-entry_failed,.m-exit_failed{fill:none;stroke:var(--warn)}
+  .legend{margin-top:10px;font-size:12.5px;color:var(--muted)}
+  .legend b{color:var(--ink);font-weight:600}
+  .swatch{display:inline-block;width:9px;height:9px;border-radius:2px;
+          margin:0 5px 0 12px;vertical-align:baseline}
+
+  /* --- funnel --- */
+  .funnel div.step{display:flex;align-items:baseline;gap:12px;padding:9px 0;
         border-bottom:1px dashed var(--line)}
   .funnel div.step:last-child{border-bottom:0}
   .funnel .n{font-variant-numeric:tabular-nums;font-weight:650;min-width:56px;
@@ -42,6 +61,15 @@
         min-width:2px}
   .funnel .lbl{flex:1;min-width:0}
   .funnel .note{color:var(--muted);font-size:12.5px;display:block}
+  .funnel .drop{color:var(--bad);font-size:12.5px;display:block;margin-top:2px}
+
+  /* --- questions --- */
+  .ask{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+       padding:14px 16px}
+  .answer{margin-top:12px;padding-top:12px;border-top:1px solid var(--line);
+          min-height:2.6em}
+  .answer b{font-weight:650}
+
   table{width:100%;border-collapse:collapse;font-size:13.5px}
   th{text-align:left;color:var(--muted);font-weight:600;font-size:12px;
      padding:6px 8px;border-bottom:1px solid var(--line);position:sticky;top:0;
@@ -58,7 +86,8 @@
   .a-shrunk,.a-missed,.a-error,.a-entry_failed{color:var(--warn)}
   .a-no_signal,.a-holding,.a-skipped_no_bar,.a-cooldown{color:var(--muted)}
   button{font:inherit;background:var(--chip);color:var(--ink);border:1px solid var(--line);
-         border-radius:999px;padding:4px 11px;cursor:pointer;margin:0 6px 6px 0}
+         border-radius:999px;padding:4px 11px;cursor:pointer;margin:0 6px 6px 0;
+         text-align:left}
   button[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:transparent}
   footer{color:var(--muted);font-size:12.5px;margin-top:40px;border-top:1px solid var(--line);
          padding-top:14px}
@@ -74,6 +103,13 @@ const D = window.DASHBOARD || {sessions: []};
 const app = document.getElementById("app");
 const esc = s => String(s == null ? "" : s).replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 const money = n => n == null ? "—" : (n < 0 ? "−$" : "$") + Math.abs(n).toLocaleString(undefined,{minimumFractionDigits:2, maximumFractionDigits:2});
+const num = n => Number(n).toLocaleString();
+const hhmm = t => String(t || "").slice(11,16);
+
+// The minutes where the agent looked and moved on. Everything else is an event
+// worth putting a mark on the chart for.
+const QUIET = new Set(["no_signal","holding","skipped_no_bar","cooldown"]);
+const EXITS = new Set(["exit_target","exit_stop","exit_time","exit_flat_by"]);
 
 function render(){
   if(!D.sessions.length){
@@ -81,7 +117,6 @@ function render(){
     return;
   }
   const s = D.sessions[D.sessions.length - 1];
-  const top = s.funnel[0].n || 1;
   let h = "";
 
   if(D.is_example){
@@ -104,22 +139,17 @@ function render(){
   h += "<div class='row'>" +
     stat(money(s.pnl), "profit or loss this session") +
     stat(traded, traded === 1 ? "contract bought" : "contracts bought") +
-    stat(s.funnel[0].n, "minutes observed") +
-    stat(s.funnel[0].n - traded, "minutes it chose not to trade") +
+    stat(num(s.funnel[0].n), "minutes observed") +
+    stat(num(s.funnel[0].n - traded), "minutes it chose not to trade") +
     "</div>";
 
-  h += "<h2>From looking to trading</h2>";
-  h += "<div class='panel funnel'>";
-  s.funnel.forEach(f => {
-    const pct = Math.max(0.4, 100 * f.n / top);
-    h += "<div class='step'><span class='n'>" + f.n + "</span>" +
-         "<span class='lbl'><b>" + esc(f.label) + "</b>" +
-         "<span class='note'>" + esc(f.note) + "</span></span>" +
-         "<span class='track'><span class='bar' style='display:block;width:" +
-         pct.toFixed(1) + "%'></span></span></div>";
-  });
-  h += "</div>";
-  h += "<p class='sub'>Each step is a rule narrowing the previous one. The drop between any two lines is countable, and every row behind it says which rule did it and what it read.</p>";
+  h += chart(s);
+  h += funnel(s);
+
+  h += "<h2>Ask it something</h2>";
+  h += "<p class='sub'>Every answer below is worked out from this session's own rows when you click. Nothing here is a sentence I wrote in advance and hoped stayed true.</p>";
+  h += "<div class='ask'><div id='qs'></div><div class='answer' id='ans'>" +
+       "<span style='color:var(--muted)'>Pick a question.</span></div></div>";
 
   if(s.refusal_reasons.length){
     h += "<h2>Why it said no</h2><div class='panel'><div class='overflow'><table><thead><tr><th style='width:70px'>Times</th><th>Reason</th></tr></thead><tbody>";
@@ -131,11 +161,8 @@ function render(){
 
   if(Object.keys(s.exits).length){
     h += "<h2>How positions ended</h2><div class='panel'>";
-    const names = {exit_target:"hit the profit target", exit_stop:"hit the stop loss",
-                   exit_time:"held long enough and timed out",
-                   exit_flat_by:"closed at the end-of-day cutoff"};
     Object.keys(s.exits).forEach(k => {
-      h += "<span class='chip'>" + s.exits[k] + " × " + esc(names[k] || k) + "</span>";
+      h += "<span class='chip'>" + s.exits[k] + " × " + esc(exitName(k)) + "</span>";
     });
     h += "</div>";
   }
@@ -164,6 +191,7 @@ function render(){
        "record disagree, the record is right.</footer>";
 
   app.innerHTML = h;
+  wireQuestions(s);
   wireFeed(s);
 }
 
@@ -171,10 +199,199 @@ function stat(v, label){
   return "<div class='stat'><b>" + esc(v) + "</b><span>" + esc(label) + "</span></div>";
 }
 
+function exitName(k){
+  return ({exit_target:"hit the profit target", exit_stop:"hit the stop loss",
+           exit_time:"held long enough and timed out",
+           exit_flat_by:"closed at the end-of-day cutoff"})[k] || k;
+}
+
+/* ---------------------------------------------------------------------------
+   The day as a picture.
+
+   The grey line is the share price minute by minute. Every mark on it is a
+   minute the agent did something other than look and move on. This is the one
+   view where "it refused here, and here, and here" is a shape instead of a
+   number -- and where you can see whether the trades landed anywhere sensible.
+--------------------------------------------------------------------------- */
+function chart(s){
+  const pts = s.decisions.filter(d => typeof d.close === "number" && d.close > 0);
+  if(pts.length < 2) return "";
+
+  const W = 900, H = 260, L = 46, R = 14, T = 16, B = 28;
+  const lows = pts.map(p => p.close);
+  let lo = Math.min.apply(null, lows), hi = Math.max.apply(null, lows);
+  const pad = (hi - lo) * 0.10 || 1;
+  lo -= pad; hi += pad;
+  const X = i => L + (W - L - R) * i / (pts.length - 1);
+  const Y = v => T + (H - T - B) * (1 - (v - lo) / (hi - lo));
+
+  let g = "";
+  // Four horizontal guides, labelled with the actual share price there.
+  for(let k = 0; k <= 3; k++){
+    const v = lo + (hi - lo) * k / 3, y = Y(v);
+    g += "<line class='grid' x1='" + L + "' y1='" + y.toFixed(1) + "' x2='" + (W-R) +
+         "' y2='" + y.toFixed(1) + "'/>" +
+         "<text class='axis' x='" + (L-6) + "' y='" + (y+3).toFixed(1) +
+         "' text-anchor='end'>" + v.toFixed(2) + "</text>";
+  }
+  // A tick on each whole hour, so the eye can place an event in the day.
+  pts.forEach((p, i) => {
+    if(hhmm(p.bar_t_et).slice(3) !== "00") return;
+    g += "<text class='axis' x='" + X(i).toFixed(1) + "' y='" + (H-8) +
+         "' text-anchor='middle'>" + esc(hhmm(p.bar_t_et)) + "</text>";
+  });
+
+  const line = pts.map((p, i) => X(i).toFixed(1) + "," + Y(p.close).toFixed(1)).join(" ");
+
+  let marks = "";
+  pts.forEach((p, i) => {
+    if(QUIET.has(p.action)) return;
+    const x = X(i), y = Y(p.close), cls = "m m-" + p.action;
+    const tip = hhmm(p.bar_t_et) + " · " + p.action + " · " + p.close.toFixed(2) +
+                "\n" + (p.reason || "");
+    if(p.action === "entered"){
+      // A filled triangle: the only mark that means money left the account.
+      marks += "<polygon class='" + cls + "' points='" + x.toFixed(1) + "," + (y-7).toFixed(1) +
+               " " + (x-5.5).toFixed(1) + "," + (y+3).toFixed(1) + " " + (x+5.5).toFixed(1) +
+               "," + (y+3).toFixed(1) + "'><title>" + esc(tip) + "</title></polygon>";
+    } else if(EXITS.has(p.action)){
+      marks += "<rect class='" + cls + "' x='" + (x-4).toFixed(1) + "' y='" + (y-4).toFixed(1) +
+               "' width='8' height='8' rx='1.5'><title>" + esc(tip) + "</title></rect>";
+    } else {
+      // Hollow: it looked, formed a view, and something stopped it.
+      marks += "<circle class='" + cls + "' cx='" + x.toFixed(1) + "' cy='" + y.toFixed(1) +
+               "' r='4'><title>" + esc(tip) + "</title></circle>";
+    }
+  });
+
+  const sw = c => "<span class='swatch' style='background:" + c + "'></span>";
+  return "<h2>The day, and what it did on it</h2>" +
+    "<div class='panel chart'><svg viewBox='0 0 " + W + " " + H + "' " +
+    "role='img' aria-label='Share price through the session with a mark on every " +
+    "minute the agent acted'>" + g +
+    "<polyline class='line' points='" + line + "'/>" + marks + "</svg>" +
+    "<div class='legend'>The grey line is <b>" + esc(s.underlying ? s.underlying + " share" : "the share") +
+    " price</b> minute by minute. Hover any mark to read that minute's reason." +
+    "<br>" + sw("var(--accent)") + "solid triangle — bought a contract" +
+    sw("var(--muted)") + "square — sold and closed the position" +
+    "<span class='swatch' style='border:1.5px solid var(--bad);background:none'></span>" +
+    "hollow circle — formed a view and was stopped (price, or a risk rule)" +
+    "</div></div>";
+}
+
+/* ---------------------------------------------------------------------------
+   The funnel, with the drops named.
+
+   Bars alone under-sell it: 5 out of 375 is a bar you cannot see. So each step
+   also says how many minutes ended there and why -- the loss is the finding.
+--------------------------------------------------------------------------- */
+function funnel(s){
+  const top = s.funnel[0].n || 1;
+  let h = "<h2>From looking to trading</h2><div class='panel funnel'>";
+  s.funnel.forEach((f, i) => {
+    const pct = Math.max(0.4, 100 * f.n / top);
+    const prev = i ? s.funnel[i-1].n : null;
+    const lost = prev == null ? null : prev - f.n;
+    h += "<div class='step'><span class='n'>" + num(f.n) + "</span>" +
+         "<span class='lbl'><b>" + esc(f.label) + "</b>" +
+         "<span class='note'>" + esc(f.note) + "</span>" +
+         (lost ? "<span class='drop'>" + num(lost) + " did not get past the step above" +
+                 (prev ? " — " + (100 * lost / prev).toFixed(1) + "% of them" : "") +
+                 "</span>" : "") +
+         "</span>" +
+         "<span class='track'><span class='bar' style='display:block;width:" +
+         pct.toFixed(1) + "%'></span></span></div>";
+  });
+  h += "</div><p class='sub'>Each step is a rule narrowing the one above it. " +
+       "The drop between any two lines is countable, and every row further down " +
+       "this page says which rule did it and what numbers it read.</p>";
+  return h;
+}
+
+/* ---------------------------------------------------------------------------
+   Questions with computed answers.
+
+   Deliberately not a text box wired to a language model. Nothing here can
+   invent a number, and there is no field anywhere on this page that accepts an
+   API key -- a page that asks a visitor for a broker credential is the exact
+   shape of a phishing attack, whatever it is really for.
+--------------------------------------------------------------------------- */
+const QUESTIONS = [
+  {q: "Why did it trade so rarely?", a: s => {
+    const f = s.funnel, biggest = [1,2,3,4]
+      .map(i => ({i: i, lost: f[i-1].n - f[i].n}))
+      .sort((a,b) => b.lost - a.lost)[0];
+    return "It looked <b>" + num(f[0].n) + "</b> times and bought <b>" + num(f[4].n) +
+      "</b> times. The biggest single drop was <b>" + num(biggest.lost) +
+      "</b> minutes lost between <b>" + esc(f[biggest.i-1].label) + "</b> and <b>" +
+      esc(f[biggest.i].label) + "</b>. " +
+      (biggest.i === 1
+        ? "So the rule itself is what kept it out: on almost every minute there was no setup to act on. Doing nothing is the normal state of this agent, not a failure of it."
+        : "So it was not short of opinions — something downstream of the opinion stopped it, and the rows below name which.");
+  }},
+  {q: "What was it doing the rest of the time?", a: s =>
+    "Every minute got a decision and a reason. This session: " +
+    s.counts.map(c => "<b>" + num(c.n) + "</b> " + esc(c.action)).join(", ") +
+    ". Each of those is a row in the journal with the numbers it read attached, " +
+    "which is what makes the count checkable rather than a claim."},
+  {q: "How much could it possibly have lost?", a: s => {
+    const L = s.limits, per = L.max_premium_per_trade, pos = L.max_open_positions;
+    if(!per) return "This session recorded no limits, which should not happen — treat the run as suspect.";
+    return "At most <b>$" + num(per) + "</b> was at risk in any one trade, and at most <b>" +
+      pos + "</b> position" + (pos === 1 ? "" : "s") + " could be open at once, so no more than <b>$" +
+      num(per * pos) + "</b> could be exposed at any instant. " +
+      (L.daily_loss_limit ? "Losses of <b>$" + num(L.daily_loss_limit) +
+        "</b> in a day stop the agent for the session. " : "") +
+      "Options are bought, never sold, so the most any single contract can lose is what was " +
+      "paid for it — the loss has a floor, which is the whole reason for buying rather than selling.";
+  }},
+  {q: "Did it make money?", a: s => {
+    if(s.pnl == null) return "The session has no closing equity recorded yet, so there is no answer to give. A blank is the honest output here, not a zero.";
+    const dir = s.pnl > 0 ? "made" : s.pnl < 0 ? "lost" : "ended level at";
+    return "It " + dir + " <b>" + money(Math.abs(s.pnl)) + "</b> across <b>" + s.funnel[4].n +
+      "</b> trade" + (s.funnel[4].n === 1 ? "" : "s") + ", on an account that opened at " +
+      money(s.opening_equity) + ". One session of a handful of trades tells you almost " +
+      "nothing about whether the rule works — it is far too small a sample to separate skill from luck. " +
+      "It tells you the machinery ran.";
+  }},
+  {q: "What stopped it when it did want to trade?", a: s => {
+    if(!s.refusal_reasons.length) return "Nothing. Every opinion it formed this session became an order.";
+    const t = s.refusal_reasons.reduce((n, r) => n + r.n, 0);
+    return "<b>" + num(t) + "</b> time" + (t === 1 ? "" : "s") + " it formed a view and then " +
+      "refused to act on it. The most common reason, <b>" + num(s.refusal_reasons[0].n) +
+      "</b> of those: " + esc(s.refusal_reasons[0].reason) + " Refusals are written down " +
+      "with their numbers rather than dropped, so they can be counted afterwards.";
+  }},
+  {q: "What is the gap between buying and selling price, and why does it matter?", a: () =>
+    "At any moment there are two prices for a contract: what someone will pay you for it " +
+    "(the <b>bid</b>) and what someone will sell it to you for (the <b>ask</b>). The gap " +
+    "between them is a cost, and you pay it <b>twice</b> — once going in, once coming out. " +
+    "This strategy is hoping for a move of about <b>0.4%</b>. A contract whose gap is 6% of " +
+    "its own value cannot be traded profitably by that rule no matter how right the rule is, " +
+    "so those minutes are declined and the gap recorded."},
+  {q: "How do I check any of this myself?", a: s =>
+    "Nothing on this page is stored anywhere else. Open <code>" + esc(s.session) +
+    "_decisions.jsonl</code> in the journal folder — one line per minute, the reason and " +
+    "the numbers behind it on every line — plus <code>" + esc(s.session) +
+    "_orders.jsonl</code> for what was actually sent to the broker. This page is a drawing " +
+    "of those files and nothing more; where they disagree, they are right and it is wrong."},
+];
+
+function wireQuestions(s){
+  const box = document.getElementById("qs"), out = document.getElementById("ans");
+  box.innerHTML = QUESTIONS.map((q, i) =>
+    "<button data-q='" + i + "'>" + esc(q.q) + "</button>").join("");
+  box.addEventListener("click", e => {
+    const b = e.target.closest("button[data-q]"); if(!b) return;
+    [...box.querySelectorAll("button")].forEach(x =>
+      x.setAttribute("aria-pressed", x === b));
+    out.innerHTML = QUESTIONS[+b.dataset.q].a(s);
+  });
+}
+
 function wireFeed(s){
   const kinds = [...new Set(s.decisions.map(d => d.action))];
-  const quiet = new Set(["no_signal","holding","skipped_no_bar","cooldown"]);
-  let active = new Set(kinds.filter(k => !quiet.has(k)));
+  let active = new Set(kinds.filter(k => !QUIET.has(k)));
   if(!active.size) active = new Set(kinds);
 
   const bar = document.getElementById("filters");
@@ -186,7 +403,7 @@ function wireFeed(s){
   const draw = () => {
     const rows = s.decisions.filter(d => active.has(d.action)).slice(0, 1200);
     document.getElementById("feed").innerHTML = rows.map(d =>
-      "<tr><td class='t'>" + esc((d.bar_t_et || "").slice(11,16)) + "</td>" +
+      "<tr><td class='t'>" + esc(hhmm(d.bar_t_et)) + "</td>" +
       "<td class='px'>" + (d.close ? d.close.toFixed(2) : "—") + "</td>" +
       "<td class='a a-" + esc(d.action) + "'>" + esc(d.action) + "</td>" +
       "<td>" + esc(d.reason) + "</td></tr>").join("") ||

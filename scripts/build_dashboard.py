@@ -127,6 +127,7 @@ def summarise(root, session):
         "session": session,
         "account": (start.get("detail") or {}).get("account_number"),
         "feed": (start.get("detail") or {}).get("feed"),
+        "underlying": (start.get("detail") or {}).get("underlying"),
         "dry_run": bool((start.get("detail") or {}).get("dry_run")),
         "limits": (start.get("detail") or {}).get("limits") or {},
         "opening_equity": opening,
@@ -240,6 +241,7 @@ def make_example(root):
 
     events.append({"event": "start", "session": session, "detail": {
         "equity": 100000.0, "account_number": "EXAMPLE-NOT-A-REAL-ACCOUNT",
+        "underlying": "SPY",
         "feed": "iex", "dry_run": True, "status": "ACTIVE",
         "limits": {"max_premium_per_trade": 250.0, "max_open_positions": 1,
                    "daily_loss_limit": 500.0, "flat_by": "15:45"}}})

@@ -1,3 +1,3 @@
-{"detail":{"account_number":"EXAMPLE-NOT-A-REAL-ACCOUNT","dry_run":true,"equity":100000.0,"feed":"iex","limits":{"daily_loss_limit":500.0,"flat_by":"15:45","max_open_positions":1,"max_premium_per_trade":250.0},"status":"ACTIVE"},"event":"start","session":"2026-08-29-EXAMPLE"}
+{"detail":{"account_number":"EXAMPLE-NOT-A-REAL-ACCOUNT","dry_run":true,"equity":100000.0,"feed":"iex","limits":{"daily_loss_limit":500.0,"flat_by":"15:45","max_open_positions":1,"max_premium_per_trade":250.0},"status":"ACTIVE","underlying":"SPY"},"event":"start","session":"2026-08-29-EXAMPLE"}
 {"detail":{"closing_equity":99943.0,"minutes_processed":375,"opening_equity":100000.0,"still_holding":null},"event":"end","session":"2026-08-29-EXAMPLE"}
 {"detail":{"attempt":1,"outcome":"account is flat"},"event":"flattened","session":"2026-08-29-EXAMPLE"}

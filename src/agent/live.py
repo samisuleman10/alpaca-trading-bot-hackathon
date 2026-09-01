@@ -154,6 +154,7 @@ class Trader:
         self.journal.session_event("start", {
             "equity": self.opening_equity,
             "account_number": actual,
+            "underlying": self.config.underlying,
             "status": account.get("status"),
             "options_approved_level": account.get("options_approved_level"),
             "positions_found_at_start": held,
