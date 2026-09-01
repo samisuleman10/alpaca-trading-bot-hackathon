@@ -158,7 +158,22 @@ class Config:
 
     strategy: str = "vwap_reversion"
     underlying: str = "SPY"
-    feed: str = "sip"
+
+    # SIP is the consolidated feed carrying every US exchange, and it is what
+    # every backtest in this repository ran on. But on this subscription SIP is
+    # delayed by fifteen minutes, so a live trader reading it decides at 15:48
+    # using the market as it looked at 15:33. IEX is a single exchange carrying
+    # roughly 4% of the volume and it answers in real time, to the second, so
+    # that is what the live trader reads. The backtest scripts pass --feed
+    # explicitly and are unaffected by this default.
+    feed: str = "iex"
+
+    # The account this system is allowed to touch, checked against the broker
+    # before the first order of every session. Not a convenience: an
+    # ALPACA_API_KEY sitting in the environment silently overrides the CLI
+    # profile on every command, so the tool can report the right profile while
+    # talking to the wrong account. An empty string turns the check off.
+    expected_account: str = "PA3JTED9VTZY"
     version: str = "0.1.0"
     strategy_params: StrategyParams = StrategyParams()
     expression: ExpressionParams = ExpressionParams()

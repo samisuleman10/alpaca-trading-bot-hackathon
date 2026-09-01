@@ -121,6 +121,20 @@ class Trader:
         """Ask the world what is true before assuming anything."""
         assert_paper_account()
         account = self.broker.account()
+
+        # Ask the broker which account this actually is. The competition is
+        # judged on one specific account, and a session traded on any other one
+        # counts for nothing -- so being wrong here is worse than not trading.
+        actual = account.get("account_number")
+        expected = self.config.expected_account
+        if expected and actual != expected:
+            raise NotPaperAccount(
+                "refusing to trade: the broker says this is account %r, but this "
+                "system is configured for %r. Check whether ALPACA_API_KEY is set "
+                "in the environment -- it overrides the CLI profile silently."
+                % (actual, expected)
+            )
+
         self.opening_equity = float(account.get("equity", 0.0))
         held = self.broker.positions()
 
@@ -139,6 +153,7 @@ class Trader:
 
         self.journal.session_event("start", {
             "equity": self.opening_equity,
+            "account_number": actual,
             "status": account.get("status"),
             "options_approved_level": account.get("options_approved_level"),
             "positions_found_at_start": held,

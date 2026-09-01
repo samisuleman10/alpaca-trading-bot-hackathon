@@ -1,0 +1,146 @@
+SPY iex: 336,520 bars, 2021-07-01 to 2024-12-31, data b3d8e8c8947c7354
+  1/144  -0.1% /   5 min / 15:40 / vol 1.00  ->   8289 trades  edge -0.01 bp
+  2/144  -0.1% /  15 min / 15:40 / vol 1.00  ->   6573 trades  edge -0.11 bp
+  3/144  -0.1% /  30 min / 15:40 / vol 1.00  ->   5067 trades  edge -0.20 bp
+  4/144  -0.1% /  60 min / 15:40 / vol 1.00  ->   4251 trades  edge -0.01 bp
+  5/144  -0.1% / 120 min / 15:40 / vol 1.00  ->   3931 trades  edge -0.08 bp
+  6/144  -0.1% / 240 min / 15:40 / vol 1.00  ->   3850 trades  edge -0.26 bp
+  7/144  -0.2% /   5 min / 15:40 / vol 1.00  ->   5596 trades  edge -0.01 bp
+  8/144  -0.2% /  15 min / 15:40 / vol 1.00  ->   4188 trades  edge -0.03 bp
+  9/144  -0.2% /  30 min / 15:40 / vol 1.00  ->   2922 trades  edge -0.04 bp
+ 10/144  -0.2% /  60 min / 15:40 / vol 1.00  ->   2201 trades  edge -0.26 bp
+ 11/144  -0.2% / 120 min / 15:40 / vol 1.00  ->   1910 trades  edge +0.10 bp
+ 12/144  -0.2% / 240 min / 15:40 / vol 1.00  ->   1830 trades  edge +0.03 bp
+ 13/144  -0.3% /   5 min / 15:40 / vol 1.00  ->   3748 trades  edge +0.01 bp
+ 14/144  -0.3% /  15 min / 15:40 / vol 1.00  ->   2809 trades  edge -0.12 bp
+ 15/144  -0.3% /  30 min / 15:40 / vol 1.00  ->   1913 trades  edge +0.06 bp
+ 16/144  -0.3% /  60 min / 15:40 / vol 1.00  ->   1415 trades  edge +0.02 bp
+ 17/144  -0.3% / 120 min / 15:40 / vol 1.00  ->   1181 trades  edge -0.45 bp
+ 18/144  -0.3% / 240 min / 15:40 / vol 1.00  ->   1116 trades  edge -0.04 bp
+ 19/144  -0.5% /   5 min / 15:40 / vol 1.00  ->   1705 trades  edge -0.56 bp
+ 20/144  -0.5% /  15 min / 15:40 / vol 1.00  ->   1280 trades  edge -1.01 bp
+ 21/144  -0.5% /  30 min / 15:40 / vol 1.00  ->    872 trades  edge -1.36 bp
+ 22/144  -0.5% /  60 min / 15:40 / vol 1.00  ->    637 trades  edge -2.74 bp
+ 23/144  -0.5% / 120 min / 15:40 / vol 1.00  ->    527 trades  edge -4.94 bp
+ 24/144  -0.5% / 240 min / 15:40 / vol 1.00  ->    500 trades  edge -4.86 bp
+ 25/144  -0.8% /   5 min / 15:40 / vol 1.00  ->    570 trades  edge +0.69 bp
+ 26/144  -0.8% /  15 min / 15:40 / vol 1.00  ->    431 trades  edge +0.00 bp
+ 27/144  -0.8% /  30 min / 15:40 / vol 1.00  ->    309 trades  edge -0.24 bp
+ 28/144  -0.8% /  60 min / 15:40 / vol 1.00  ->    227 trades  edge -1.69 bp
+ 29/144  -0.8% / 120 min / 15:40 / vol 1.00  ->    195 trades  edge -3.12 bp
+ 30/144  -0.8% / 240 min / 15:40 / vol 1.00  ->    187 trades  edge -3.25 bp
+ 31/144  -1.2% /   5 min / 15:40 / vol 1.00  ->    130 trades  edge +4.83 bp
+ 32/144  -1.2% /  15 min / 15:40 / vol 1.00  ->    106 trades  edge +9.61 bp
+ 33/144  -1.2% /  30 min / 15:40 / vol 1.00  ->     79 trades  edge +11.07 bp
+ 34/144  -1.2% /  60 min / 15:40 / vol 1.00  ->     65 trades  edge +1.46 bp
+ 35/144  -1.2% / 120 min / 15:40 / vol 1.00  ->     60 trades  edge -1.03 bp
+ 36/144  -1.2% / 240 min / 15:40 / vol 1.00  ->     59 trades  edge +2.35 bp
+ 37/144  -0.1% /   5 min / 15:40 / vol 1.20  ->   7610 trades  edge -0.02 bp
+ 38/144  -0.1% /  15 min / 15:40 / vol 1.20  ->   6097 trades  edge +0.02 bp
+ 39/144  -0.1% /  30 min / 15:40 / vol 1.20  ->   4740 trades  edge -0.02 bp
+ 40/144  -0.1% /  60 min / 15:40 / vol 1.20  ->   3959 trades  edge -0.09 bp
+ 41/144  -0.1% / 120 min / 15:40 / vol 1.20  ->   3648 trades  edge -0.10 bp
+ 42/144  -0.1% / 240 min / 15:40 / vol 1.20  ->   3572 trades  edge -0.04 bp
+ 43/144  -0.2% /   5 min / 15:40 / vol 1.20  ->   5146 trades  edge +0.20 bp
+ 44/144  -0.2% /  15 min / 15:40 / vol 1.20  ->   3922 trades  edge -0.21 bp
+ 45/144  -0.2% /  30 min / 15:40 / vol 1.20  ->   2781 trades  edge -0.20 bp
+ 46/144  -0.2% /  60 min / 15:40 / vol 1.20  ->   2097 trades  edge +0.08 bp
+ 47/144  -0.2% / 120 min / 15:40 / vol 1.20  ->   1817 trades  edge +0.05 bp
+ 48/144  -0.2% / 240 min / 15:40 / vol 1.20  ->   1743 trades  edge -0.35 bp
+ 49/144  -0.3% /   5 min / 15:40 / vol 1.20  ->   3458 trades  edge +0.21 bp
+ 50/144  -0.3% /  15 min / 15:40 / vol 1.20  ->   2636 trades  edge +0.21 bp
+ 51/144  -0.3% /  30 min / 15:40 / vol 1.20  ->   1830 trades  edge -0.36 bp
+ 52/144  -0.3% /  60 min / 15:40 / vol 1.20  ->   1359 trades  edge -0.37 bp
+ 53/144  -0.3% / 120 min / 15:40 / vol 1.20  ->   1139 trades  edge -0.16 bp
+ 54/144  -0.3% / 240 min / 15:40 / vol 1.20  ->   1076 trades  edge -0.07 bp
+ 55/144  -0.5% /   5 min / 15:40 / vol 1.20  ->   1578 trades  edge -0.25 bp
+ 56/144  -0.5% /  15 min / 15:40 / vol 1.20  ->   1200 trades  edge -1.51 bp
+ 57/144  -0.5% /  30 min / 15:40 / vol 1.20  ->    836 trades  edge -1.65 bp
+ 58/144  -0.5% /  60 min / 15:40 / vol 1.20  ->    614 trades  edge -2.55 bp
+ 59/144  -0.5% / 120 min / 15:40 / vol 1.20  ->    512 trades  edge -3.40 bp
+ 60/144  -0.5% / 240 min / 15:40 / vol 1.20  ->    484 trades  edge -2.26 bp
+ 61/144  -0.8% /   5 min / 15:40 / vol 1.20  ->    526 trades  edge +1.38 bp
+ 62/144  -0.8% /  15 min / 15:40 / vol 1.20  ->    397 trades  edge +0.16 bp
+ 63/144  -0.8% /  30 min / 15:40 / vol 1.20  ->    293 trades  edge +0.65 bp
+ 64/144  -0.8% /  60 min / 15:40 / vol 1.20  ->    219 trades  edge -0.50 bp
+ 65/144  -0.8% / 120 min / 15:40 / vol 1.20  ->    188 trades  edge -3.62 bp
+ 66/144  -0.8% / 240 min / 15:40 / vol 1.20  ->    181 trades  edge -2.87 bp
+ 67/144  -1.2% /   5 min / 15:40 / vol 1.20  ->    120 trades  edge +5.84 bp
+ 68/144  -1.2% /  15 min / 15:40 / vol 1.20  ->     99 trades  edge +10.01 bp
+ 69/144  -1.2% /  30 min / 15:40 / vol 1.20  ->     75 trades  edge +7.92 bp
+ 70/144  -1.2% /  60 min / 15:40 / vol 1.20  ->     61 trades  edge +2.84 bp
+ 71/144  -1.2% / 120 min / 15:40 / vol 1.20  ->     57 trades  edge -0.63 bp
+ 72/144  -1.2% / 240 min / 15:40 / vol 1.20  ->     57 trades  edge +1.60 bp
+ 73/144  -0.1% /   5 min / 15:55 / vol 1.00  ->   8730 trades  edge -0.10 bp
+ 74/144  -0.1% /  15 min / 15:55 / vol 1.00  ->   6991 trades  edge -0.05 bp
+ 75/144  -0.1% /  30 min / 15:55 / vol 1.00  ->   5465 trades  edge -0.13 bp
+ 76/144  -0.1% /  60 min / 15:55 / vol 1.00  ->   4638 trades  edge -0.16 bp
+ 77/144  -0.1% / 120 min / 15:55 / vol 1.00  ->   4319 trades  edge -0.01 bp
+ 78/144  -0.1% / 240 min / 15:55 / vol 1.00  ->   4235 trades  edge -0.03 bp
+ 79/144  -0.2% /   5 min / 15:55 / vol 1.00  ->   5908 trades  edge +0.24 bp
+ 80/144  -0.2% /  15 min / 15:55 / vol 1.00  ->   4485 trades  edge -0.11 bp
+ 81/144  -0.2% /  30 min / 15:55 / vol 1.00  ->   3199 trades  edge -0.41 bp
+ 82/144  -0.2% /  60 min / 15:55 / vol 1.00  ->   2480 trades  edge -0.20 bp
+ 83/144  -0.2% / 120 min / 15:55 / vol 1.00  ->   2181 trades  edge +0.05 bp
+ 84/144  -0.2% / 240 min / 15:55 / vol 1.00  ->   2101 trades  edge -0.17 bp
+ 85/144  -0.3% /   5 min / 15:55 / vol 1.00  ->   3980 trades  edge -0.22 bp
+ 86/144  -0.3% /  15 min / 15:55 / vol 1.00  ->   3035 trades  edge +0.02 bp
+ 87/144  -0.3% /  30 min / 15:55 / vol 1.00  ->   2120 trades  edge -0.26 bp
+ 88/144  -0.3% /  60 min / 15:55 / vol 1.00  ->   1624 trades  edge -0.38 bp
+ 89/144  -0.3% / 120 min / 15:55 / vol 1.00  ->   1386 trades  edge +0.04 bp
+ 90/144  -0.3% / 240 min / 15:55 / vol 1.00  ->   1319 trades  edge -0.08 bp
+ 91/144  -0.5% /   5 min / 15:55 / vol 1.00  ->   1829 trades  edge -0.45 bp
+ 92/144  -0.5% /  15 min / 15:55 / vol 1.00  ->   1402 trades  edge -1.41 bp
+ 93/144  -0.5% /  30 min / 15:55 / vol 1.00  ->    989 trades  edge -1.60 bp
+ 94/144  -0.5% /  60 min / 15:55 / vol 1.00  ->    750 trades  edge -1.97 bp
+ 95/144  -0.5% / 120 min / 15:55 / vol 1.00  ->    639 trades  edge -2.99 bp
+ 96/144  -0.5% / 240 min / 15:55 / vol 1.00  ->    611 trades  edge -1.80 bp
+ 97/144  -0.8% /   5 min / 15:55 / vol 1.00  ->    621 trades  edge -0.26 bp
+ 98/144  -0.8% /  15 min / 15:55 / vol 1.00  ->    479 trades  edge -0.59 bp
+ 99/144  -0.8% /  30 min / 15:55 / vol 1.00  ->    354 trades  edge -1.49 bp
+100/144  -0.8% /  60 min / 15:55 / vol 1.00  ->    274 trades  edge -1.36 bp
+101/144  -0.8% / 120 min / 15:55 / vol 1.00  ->    243 trades  edge -4.01 bp
+102/144  -0.8% / 240 min / 15:55 / vol 1.00  ->    232 trades  edge -0.10 bp
+103/144  -1.2% /   5 min / 15:55 / vol 1.00  ->    148 trades  edge +5.08 bp
+104/144  -1.2% /  15 min / 15:55 / vol 1.00  ->    124 trades  edge +7.07 bp
+105/144  -1.2% /  30 min / 15:55 / vol 1.00  ->     96 trades  edge +6.71 bp
+106/144  -1.2% /  60 min / 15:55 / vol 1.00  ->     82 trades  edge +4.41 bp
+107/144  -1.2% / 120 min / 15:55 / vol 1.00  ->     78 trades  edge +1.94 bp
+108/144  -1.2% / 240 min / 15:55 / vol 1.00  ->     77 trades  edge -0.69 bp
+109/144  -0.1% /   5 min / 15:55 / vol 1.20  ->   8039 trades  edge +0.01 bp
+110/144  -0.1% /  15 min / 15:55 / vol 1.20  ->   6500 trades  edge -0.03 bp
+111/144  -0.1% /  30 min / 15:55 / vol 1.20  ->   5127 trades  edge -0.11 bp
+112/144  -0.1% /  60 min / 15:55 / vol 1.20  ->   4340 trades  edge -0.17 bp
+113/144  -0.1% / 120 min / 15:55 / vol 1.20  ->   4023 trades  edge -0.17 bp
+114/144  -0.1% / 240 min / 15:55 / vol 1.20  ->   3943 trades  edge -0.08 bp
+115/144  -0.2% /   5 min / 15:55 / vol 1.20  ->   5453 trades  edge -0.02 bp
+116/144  -0.2% /  15 min / 15:55 / vol 1.20  ->   4213 trades  edge -0.10 bp
+117/144  -0.2% /  30 min / 15:55 / vol 1.20  ->   3061 trades  edge +0.01 bp
+118/144  -0.2% /  60 min / 15:55 / vol 1.20  ->   2376 trades  edge -0.16 bp
+119/144  -0.2% / 120 min / 15:55 / vol 1.20  ->   2086 trades  edge +0.04 bp
+120/144  -0.2% / 240 min / 15:55 / vol 1.20  ->   2009 trades  edge -0.29 bp
+121/144  -0.3% /   5 min / 15:55 / vol 1.20  ->   3683 trades  edge +0.23 bp
+122/144  -0.3% /  15 min / 15:55 / vol 1.20  ->   2850 trades  edge -0.45 bp
+123/144  -0.3% /  30 min / 15:55 / vol 1.20  ->   2031 trades  edge -0.13 bp
+124/144  -0.3% /  60 min / 15:55 / vol 1.20  ->   1561 trades  edge +0.05 bp
+125/144  -0.3% / 120 min / 15:55 / vol 1.20  ->   1339 trades  edge +0.26 bp
+126/144  -0.3% / 240 min / 15:55 / vol 1.20  ->   1272 trades  edge +0.62 bp
+127/144  -0.5% /   5 min / 15:55 / vol 1.20  ->   1703 trades  edge +0.01 bp
+128/144  -0.5% /  15 min / 15:55 / vol 1.20  ->   1316 trades  edge -1.55 bp
+129/144  -0.5% /  30 min / 15:55 / vol 1.20  ->    951 trades  edge -0.58 bp
+130/144  -0.5% /  60 min / 15:55 / vol 1.20  ->    724 trades  edge -1.38 bp
+131/144  -0.5% / 120 min / 15:55 / vol 1.20  ->    621 trades  edge -1.86 bp
+132/144  -0.5% / 240 min / 15:55 / vol 1.20  ->    593 trades  edge +0.03 bp
+133/144  -0.8% /   5 min / 15:55 / vol 1.20  ->    575 trades  edge +1.29 bp
+134/144  -0.8% /  15 min / 15:55 / vol 1.20  ->    443 trades  edge +0.11 bp
+135/144  -0.8% /  30 min / 15:55 / vol 1.20  ->    338 trades  edge +0.87 bp
+136/144  -0.8% /  60 min / 15:55 / vol 1.20  ->    264 trades  edge -1.07 bp
+137/144  -0.8% / 120 min / 15:55 / vol 1.20  ->    235 trades  edge -0.74 bp
+138/144  -0.8% / 240 min / 15:55 / vol 1.20  ->    225 trades  edge -1.51 bp
+139/144  -1.2% /   5 min / 15:55 / vol 1.20  ->    137 trades  edge +4.03 bp
+140/144  -1.2% /  15 min / 15:55 / vol 1.20  ->    116 trades  edge +7.71 bp
+141/144  -1.2% /  30 min / 15:55 / vol 1.20  ->     92 trades  edge +8.42 bp
+142/144  -1.2% /  60 min / 15:55 / vol 1.20  ->     78 trades  edge +6.18 bp
+143/144  -1.2% / 120 min / 15:55 / vol 1.20  ->     74 trades  edge +3.34 bp
+144/144  -1.2% / 240 min / 15:55 / vol 1.20  ->     73 trades  edge -1.14 bp
+wrote C:\Users\samip\Desktop\Sami\Projects\Python\alpaca-options-agent\results\ablation\SPY_iex_2021-07-01_2024-12-31.md
