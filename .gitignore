@@ -42,3 +42,6 @@ Thumbs.db
 # demand. This is also the same unanswered question as data/: they are derived
 # from Alpaca prices.
 results/**/*_bars.csv
+
+# Scheduler output, not evidence. The journal itself is committed.
+journal/*.log
