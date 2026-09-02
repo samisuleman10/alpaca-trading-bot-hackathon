@@ -403,6 +403,35 @@ class Broker:
         # the rule: it would form opinions about a market nobody is trading.
         return [b for b in bars if "09:30:00" <= b.t_et[11:19] < "16:00:00" and b.session == session]
 
+    def listed_expiries(self, on_or_after: str, through: str) -> List[str]:
+        """Which expiry dates actually exist for our underlying, in order.
+
+        We used to compute the expiry from the calendar -- tomorrow, skipping
+        weekends -- and assume a contract existed for it. That holds for SPY on
+        an ordinary week and fails everywhere else: DIA and SLV list weekly
+        Fridays, not every weekday, and no underlying at all lists an expiry on
+        a market holiday. Asking is one request and cannot be wrong.
+        """
+        seen, token = set(), None
+        while True:
+            cmd = [
+                "option", "contracts",
+                "--underlying-symbols", self.underlying,
+                "--expiration-date-gte", on_or_after,
+                "--expiration-date-lte", through,
+                "--type", "call",
+                "--limit", "10000",
+            ]
+            if token:
+                cmd += ["--page-token", token]
+            payload = _run(cmd) or {}
+            for row in payload.get("option_contracts") or []:
+                if row.get("expiration_date"):
+                    seen.add(row["expiration_date"])
+            token = payload.get("next_page_token")
+            if not token:
+                return sorted(seen)
+
     def option_chain(
         self,
         expiry: str,

@@ -41,6 +41,7 @@ import sys
 import time
 from dataclasses import replace
 from datetime import datetime, timedelta
+from typing import Dict, Optional
 
 from .bars import BarWindow
 from .broker import NEW_YORK, Broker, BrokerError, NotPaperAccount, assert_paper_account
@@ -91,6 +92,8 @@ class Trader:
         self.counter = 0
         self.opening_equity = 0.0
         self.entered_at_minute = None   # for the cooldown
+        # session date -> the listed expiry we settled on for it
+        self._expiry_cache = {}   # type: Dict[str, Optional[str]]
 
     # -- helpers -------------------------------------------------------------
 
@@ -331,6 +334,13 @@ class Trader:
                 return
 
         expiry = self._nearest_expiry(bar.session)
+        if not expiry:
+            self.journal.decision(
+                bar.t_utc, bar.t_et, bar.close, "no_expiry",
+                "The rule fired, but no contract is listed to expire on or after "
+                "the day we wanted, so there was nothing to buy.", view.evidence,
+            )
+            return
         band = self.config.expression.strike_offset
         try:
             quotes = self.broker.option_chain(
@@ -458,19 +468,44 @@ class Trader:
             contract=intent.contract,
         )
 
-    def _nearest_expiry(self, session: str) -> str:
-        """The expiry `target_days_to_expiry` days out, or the next one after.
+    def _nearest_expiry(self, session: str) -> Optional[str]:
+        """The first expiry that exists on or after the day we asked for.
 
-        SPY lists contracts expiring every weekday, so this is nearly always
-        exactly the day asked for; the weekend roll is the exception it exists
-        to handle.
+        The old version added `target_days_to_expiry` calendar days, skipped
+        Saturday and Sunday, and handed the result straight to the chain
+        request. It never checked that anything expires that day.
+
+        On Friday 4 September 2026 that returns Monday the 7th -- Labor Day,
+        with the market shut and **zero contracts listed for any underlying**.
+        The chain would have come back empty and the final session of the
+        competition would have recorded `no_chain` on every signal instead of
+        trading. Weekly-expiry funds like DIA and SLV break the same way on an
+        ordinary Tuesday.
+
+        So we ask the broker what is listed and take the first one at or past
+        the target. The answer is cached for the session because the list of
+        listed expiries does not change during a trading day.
         """
-        day = datetime.strptime(session, "%Y-%m-%d") + timedelta(
+        if session in self._expiry_cache:
+            return self._expiry_cache[session]
+
+        target = datetime.strptime(session, "%Y-%m-%d") + timedelta(
             days=self.config.expression.target_days_to_expiry
         )
-        while day.weekday() >= 5:
-            day += timedelta(days=1)
-        return day.strftime("%Y-%m-%d")
+        # Four weeks is far more than we would ever hold and still bounds the
+        # request. If nothing is listed inside a month, something is wrong with
+        # the underlying, not with the date arithmetic.
+        try:
+            listed = self.broker.listed_expiries(
+                target.strftime("%Y-%m-%d"),
+                (target + timedelta(days=28)).strftime("%Y-%m-%d"),
+            )
+        except BrokerError:
+            return None
+
+        chosen = listed[0] if listed else None
+        self._expiry_cache[session] = chosen
+        return chosen
 
 
 MAX_WAIT_FOR_OPEN_SECONDS = 4 * 60 * 60
