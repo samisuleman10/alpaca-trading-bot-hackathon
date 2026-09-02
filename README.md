@@ -35,6 +35,12 @@ broken and rejected its own positive control. The lesson was cheap to write down
 and expensive to learn: **a negative result is not a finding until you have
 proved you asked the question correctly.**
 
+## The live record
+
+**<https://samisuleman10.github.io/alpaca-trading-bot-hackathon/>** — every
+decision the agent made, minute by minute, including the ones where it decided
+to do nothing. Rebuilt from the journal after each session.
+
 ## The submission write-up
 
 [`WRITEUP.md`](WRITEUP.md) — the AI logic, the risk gates, how Alpaca's

@@ -47,6 +47,7 @@
   .m-shrunk,.m-missed,.m-error,.m-entry_failed,.m-exit_failed{fill:none;stroke:var(--warn)}
   .legend{margin-top:10px;font-size:12.5px;color:var(--muted)}
   .muted{color:var(--muted);font-size:13.5px;margin:0;line-height:1.55}
+  footer a{color:var(--accent)}
   .chart .eqline{fill:none;stroke:var(--accent);stroke-width:1.6}
   .chart .flat{stroke:var(--muted);stroke-width:1;stroke-dasharray:4 4}
   .chart .held{fill:var(--chip)}
@@ -194,7 +195,13 @@ function render(){
   h += "<footer>Built from the agent's own append-only journal by " +
        "<code>scripts/build_dashboard.py</code>. Every number on this page is " +
        "recomputable from the JSONL files in the repository — if the page and the " +
-       "record disagree, the record is right.</footer>";
+       "record disagree, the record is right." +
+       "<br><br><b>Read the write-up</b> — what the rule is, what the risk gates " +
+       "are, and what the backtest actually found: " +
+       "<a href='https://github.com/samisuleman10/alpaca-trading-bot-hackathon/blob/main/WRITEUP.md'>WRITEUP.md</a>. " +
+       "All the code and the raw journal: " +
+       "<a href='https://github.com/samisuleman10/alpaca-trading-bot-hackathon'>the repository</a>." +
+       "</footer>";
 
   app.innerHTML = h;
   wireQuestions(s);
