@@ -68,6 +68,14 @@
   .bar i{position:absolute;left:0;top:0;bottom:0;background:var(--accent);opacity:.85}
   .barlab{display:flex;justify-content:space-between;color:var(--muted);font-size:13px}
 
+  .dense{padding:3.5vh 6vw}
+  .dense h2{font-size:clamp(20px,2.4vw,28px);margin:0 0 12px}
+  .dense p{font-size:clamp(13px,1.05vw,15px);margin:0 0 9px;line-height:1.5}
+  .dense li{font-size:clamp(13px,1.05vw,15px);margin-bottom:6px;line-height:1.5}
+  .dense ul{margin:0 0 10px}
+  .dense .kicker{margin:0 0 9px}
+  .dense .steps li{margin-bottom:8px;padding-left:36px}
+  .dense .steps li::before{width:24px;height:24px;font-size:13px}
   footer{color:var(--muted);font-size:14px;margin-top:8px}
   .hint{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);
         background:var(--panel);border:1px solid var(--line);border-radius:999px;
@@ -112,7 +120,7 @@
   </div>
 </section>
 
-<section>
+<section class="dense">
   <div class="n">3 / 11</div>
   <p class="kicker">The AI logic</p>
   <h2>One fixed loop, once a minute, always in this order</h2>
@@ -180,7 +188,7 @@
   made.</p>
 </section>
 
-<section>
+<section class="dense">
   <div class="n">6 / 11</div>
   <p class="kicker">The Alpaca infrastructure</p>
   <h2>One file is allowed to touch the network</h2>
