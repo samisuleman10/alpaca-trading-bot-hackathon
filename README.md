@@ -35,6 +35,12 @@ broken and rejected its own positive control. The lesson was cheap to write down
 and expensive to learn: **a negative result is not a finding until you have
 proved you asked the question correctly.**
 
+## The submission write-up
+
+[`WRITEUP.md`](WRITEUP.md) — the AI logic, the risk gates, how Alpaca's
+infrastructure is used, what the backtest actually found, and the gaps. Start
+there if you are here to judge this.
+
 ## Design documents
 
 Four documents settle what this is and what would count as it working: what the
