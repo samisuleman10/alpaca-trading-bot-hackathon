@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Options Alpha Agent — slides</title>
+<style>
+  :root{
+    --bg:#fbfbfa; --panel:#fff; --ink:#1a1a18; --muted:#6b6b66; --line:#e6e4df;
+    --accent:#2f6f4f; --warn:#9a5b00; --bad:#a33a2a; --chip:#f1efea;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141412; --panel:#1c1c1a; --ink:#eceae4; --muted:#9a978f;
+           --line:#2e2d2a; --accent:#7bbd95; --warn:#d79a4a; --bad:#e0806f;
+           --chip:#262523; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{background:var(--bg);color:var(--ink);
+       font:16px/1.6 ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif;
+       scroll-snap-type:y mandatory;overflow-y:scroll;height:100vh}
+  section{scroll-snap-align:start;min-height:100vh;display:flex;flex-direction:column;
+          justify-content:center;padding:6vh 7vw;position:relative;
+          border-bottom:1px solid var(--line)}
+  .n{position:absolute;top:3vh;right:7vw;color:var(--muted);font-size:13px;
+     letter-spacing:.04em}
+  .kicker{color:var(--accent);font-size:13px;font-weight:650;letter-spacing:.09em;
+          text-transform:uppercase;margin:0 0 14px}
+  h1{font-size:clamp(30px,5vw,58px);line-height:1.08;margin:0 0 18px;letter-spacing:-.03em}
+  h2{font-size:clamp(24px,3.4vw,40px);line-height:1.14;margin:0 0 20px;letter-spacing:-.025em}
+  p{margin:0 0 14px;max-width:62ch;font-size:clamp(15px,1.5vw,19px)}
+  .lead{font-size:clamp(17px,1.9vw,23px);color:var(--muted);max-width:64ch}
+  b,strong{font-weight:650}
+  ul{margin:0 0 14px;padding-left:22px;max-width:64ch}
+  li{margin-bottom:9px;font-size:clamp(15px,1.5vw,19px)}
+  .muted{color:var(--muted)}
+  a{color:var(--accent)}
+  code{font:0.92em ui-monospace,Menlo,Consolas,monospace;background:var(--chip);
+       padding:1px 6px;border-radius:4px}
+
+  .cards{display:flex;flex-wrap:wrap;gap:12px;margin:6px 0 16px}
+  .card{flex:1 1 190px;background:var(--panel);border:1px solid var(--line);
+        border-radius:11px;padding:14px 16px}
+  .card b{display:block;font-size:clamp(22px,2.8vw,32px);letter-spacing:-.02em;line-height:1.15}
+  .card span{color:var(--muted);font-size:13px;display:block;margin-top:4px}
+  .card.good b{color:var(--accent)}
+
+  table{border-collapse:collapse;margin:4px 0 16px;font-size:clamp(14px,1.4vw,18px)}
+  th,td{text-align:left;padding:8px 20px 8px 0;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:600;font-size:.85em;letter-spacing:.03em}
+  td.num{font-variant-numeric:tabular-nums}
+
+  .steps{counter-reset:s;margin:0;padding:0;list-style:none;max-width:70ch}
+  .steps li{counter-increment:s;position:relative;padding-left:44px;margin-bottom:13px}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:1px;
+      width:28px;height:28px;border-radius:50%;background:var(--chip);color:var(--accent);
+      font-weight:650;font-size:14px;display:flex;align-items:center;justify-content:center}
+
+  .split{display:flex;gap:34px;flex-wrap:wrap;align-items:flex-start}
+  .split>div{flex:1 1 300px;min-width:280px}
+  .gate{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);
+        border-radius:0 10px 10px 0;padding:12px 16px;margin-bottom:10px}
+  .gate b{display:block;font-size:16px} .gate span{color:var(--muted);font-size:14px}
+
+  .quiet{background:var(--panel);border:1px solid var(--line);border-radius:11px;
+         padding:18px 20px;max-width:66ch}
+  .bar{height:26px;background:var(--chip);border-radius:5px;position:relative;
+       margin:14px 0 6px;overflow:hidden}
+  .bar i{position:absolute;left:0;top:0;bottom:0;background:var(--accent);opacity:.85}
+  .barlab{display:flex;justify-content:space-between;color:var(--muted);font-size:13px}
+
+  footer{color:var(--muted);font-size:14px;margin-top:8px}
+  .hint{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);
+        background:var(--panel);border:1px solid var(--line);border-radius:999px;
+        padding:5px 14px;font-size:12.5px;color:var(--muted);z-index:9}
+  @media print{
+    body{height:auto;overflow:visible}
+    section{min-height:auto;page-break-after:always;border:0;padding:8mm 10mm}
+    .hint{display:none}
+  }
+</style>
+</head>
+<body>
+
+<section>
+  <div class="n">1 / 11</div>
+  <p class="kicker">lablab.ai &times; Alpaca &mdash; Options Alpha Agents</p>
+  <h1>An autonomous options agent,<br>and the record of everything it decided</h1>
+  <p class="lead">It watches SPY minute by minute, buys option contracts when its rule
+  fires, manages its own exits, and closes everything before the bell. It writes down
+  every decision it makes &mdash; <b>including the hundreds of minutes it decides to do
+  nothing.</b></p>
+  <footer>Paper account <b>PA3JTED9VTZY</b> &middot; $100,000 &middot; MIT licensed &middot;
+  <a href="./">live decision record</a></footer>
+</section>
+
+<section>
+  <div class="n">2 / 11</div>
+  <p class="kicker">What it is</p>
+  <h2>Most trading demos show you the wins.<br>This one shows you the whole tape.</h2>
+  <p>An <b>option</b> is a contract giving the right to buy 100 shares at a fixed price
+  before a fixed date. You can only lose what you paid for it &mdash; which is why this
+  agent buys them and never sells them.</p>
+  <p>The hard part of an autonomous trader is not placing an order. It is being able to
+  answer, afterwards, <b>why it did that</b> &mdash; and being able to prove the answer.
+  So every minute produces a row: the price, the average it was measured against, the
+  decision, and the reason in plain English.</p>
+  <div class="cards">
+    <div class="card"><b>350</b><span>decisions recorded on day one</span></div>
+    <div class="card"><b>0</b><span>minutes missed</span></div>
+    <div class="card"><b>62</b><span>tests gating every deploy</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="n">3 / 11</div>
+  <p class="kicker">The AI logic</p>
+  <h2>One fixed loop, once a minute, always in this order</h2>
+  <ol class="steps">
+    <li><b>Fetch the minute that just closed.</b> Not arrived within twenty seconds?
+      Skip it and journal the skip. A late bar is missing data, never a reason to guess.</li>
+    <li><b>If holding, check the exits first.</b> Target, stop, or held-too-long. If one
+      fires, sell and stop &mdash; no new entry is considered this minute.</li>
+    <li><b>Only if flat, form a view.</b> Is price more than <b>0.5% below VWAP</b> &mdash;
+      the day&rsquo;s average weighted by volume, i.e. what the typical dollar paid today
+      &mdash; and did this minute trade 20% heavier than usual?</li>
+    <li><b>Turn the view into a contract.</b> Nearest strike, expiring tomorrow, sized on
+      the <b>premium at risk</b> &mdash; not the ~$77,000 of shares one contract controls.</li>
+    <li><b>Refuse if the trade cannot pay for itself.</b> The gap between an option&rsquo;s
+      buying and selling price is paid twice on a round trip. Over 5% of the contract&rsquo;s
+      value and the agent declines, because the whole hoped-for gain is 0.4%.</li>
+  </ol>
+  <p class="muted"><b>No language model sits in the trading path.</b> The rule is small,
+  fixed and reproducible from the record. An LLM between the market and an order would
+  make every decision unauditable for no measured gain.</p>
+</section>
+
+<section>
+  <div class="n">4 / 11</div>
+  <p class="kicker">The risk gates</p>
+  <h2>The strategy proposes. A separate layer disposes.</h2>
+  <div class="split">
+    <div>
+      <p>Every intended order passes through a risk layer that <b>can only ever say
+      <i>no</i> or <i>smaller</i>. It has no code path that makes anything larger.</b></p>
+      <p>That is not a claim in a comment. A property test throws <b>5,000 randomly built
+      orders</b> at it &mdash; random limits, times, position counts, losses &mdash; and
+      asserts that not one comes back bigger than it went in. A future change that quietly
+      adds a growth path fails that test without anyone having to anticipate it.</p>
+    </div>
+    <div>
+      <div class="gate"><b>Strategy module</b><span>Forbidden by an automated test from
+        importing anything outside Python&rsquo;s standard library. No network, no clock,
+        no account &mdash; so it cannot read the future.</span></div>
+      <div class="gate"><b>Look-ahead guard</b><span>Reading any bar past the current
+        minute raises an error. A test deliberately reaches into the future and asserts
+        the crash.</span></div>
+      <div class="gate"><b>The flattener</b><span>A separate process on its own schedule
+        closes everything at 15:50 without asking whether the trader is healthy &mdash;
+        because the case that matters is the one where it is not.</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="n">5 / 11</div>
+  <p class="kicker">The limits in force</p>
+  <h2>Six numbers a judge can check in twenty seconds</h2>
+  <table>
+    <tr><th>Gate</th><th>Limit</th><th>Why</th></tr>
+    <tr><td>Most spent on one trade</td><td class="num"><b>$250</b></td><td>0.25% of the account</td></tr>
+    <tr><td>Positions open at once</td><td class="num"><b>1</b></td><td>so at most $250 is ever exposed</td></tr>
+    <tr><td>Stop for the day after losing</td><td class="num"><b>$500</b></td><td>this can prevent a recovery; it stays anyway</td></tr>
+    <tr><td>No new positions after</td><td class="num"><b>15:40 NY</b></td><td>nothing opened that cannot be closed</td></tr>
+    <tr><td>Everything closed by</td><td class="num"><b>15:45 NY</b></td><td>no position is carried overnight</td></tr>
+    <tr><td>Selling options we do not own</td><td class="num"><b>impossible</b></td><td>a sold option has no upper bound on the loss</td></tr>
+  </table>
+  <p class="muted">These are the <b>quarter-size</b> limits &mdash; a quarter of what the
+  plan originally allowed. Slide 8 explains why they were cut, and when that decision was
+  made.</p>
+</section>
+
+<section>
+  <div class="n">6 / 11</div>
+  <p class="kicker">The Alpaca infrastructure</p>
+  <h2>One file is allowed to touch the network</h2>
+  <p><code>broker.py</code> drives the <b>Alpaca CLI</b> for everything: the market clock,
+  minute bars, the option chain, live option quotes, account equity, orders, and the
+  flatten-everything calls. Nothing else in the codebase imports <code>subprocess</code>
+  or opens a socket.</p>
+  <p class="kicker" style="margin-top:20px">Three things we measured rather than assumed</p>
+  <ul>
+    <li><b>The account is proved before every order.</b> <code>alpaca doctor</code> must
+      report the paper endpoint. Anything else, including no answer, stops the order.</li>
+    <li><b><code>--profile</code> is silently ignored by <code>doctor</code>.</b> So a run
+      could check one account and trade on another, with the check passing and meaning
+      nothing. The account is fixed once per process by environment variable, and the
+      trader refuses to start unless it is connected to <code>PA3JTED9VTZY</code>.</li>
+    <li><b>We do not wrap the CLI in our own retry loop.</b> It already retries rate limits
+      three times and honours <code>Retry-After</code>; a second layer multiplies the two
+      and stalls past the minute.</li>
+  </ul>
+  <p class="muted"><b>On data:</b> SIP carries all US volume but arrives 15 minutes late on
+  this subscription &mdash; fine for backtests, useless live. IEX is real-time but carries
+  ~4% of volume. So we ran the entire study on <b>both feeds</b> to find out whether that
+  gap changes the answer. It does not.</p>
+</section>
+
+<section>
+  <div class="n">7 / 11</div>
+  <p class="kicker">What we measured</p>
+  <h2>We tested the strategy properly, and it does not work</h2>
+  <p>144 combinations of four settings, each against a <b>coin-flip control</b>: identical
+  stops, targets and exits, with entry timing chosen at random. If a rule cannot beat
+  random entry it has no edge &mdash; it is just holding the market.</p>
+  <table>
+    <tr><th></th><th>SIP</th><th>IEX</th></tr>
+    <tr><td>Settings with enough trades to read</td><td class="num">96</td><td class="num">96</td></tr>
+    <tr><td>Beat their own coin flip at all</td><td class="num">18</td><td class="num">30</td></tr>
+    <tr><td><b>Survive having asked 96 questions</b></td><td class="num"><b>0</b></td><td class="num"><b>0</b></td></tr>
+  </table>
+  <p>Ask 96 questions and a couple will look good by luck alone; the correction for that is
+  standard, and we applied it. <b>Zero survive, on both feeds, with trading costs set to
+  zero</b> &mdash; the most generous test possible. The best contiguous block of settings
+  gives <b>+0.40 basis points per trade over 1,727 trades</b> (t = +0.95, p = 0.343):
+  indistinguishable from luck.</p>
+</section>
+
+<section>
+  <div class="n">8 / 11</div>
+  <p class="kicker">Originality</p>
+  <h2>The fallback was fixed <i>before</i> the result was read</h2>
+  <p>The plan committed in advance: if no setting clears the bar, <b>run the tested rule
+  anyway at quarter size, one position, and publish both numbers.</b> That is what is
+  running. A fallback chosen after seeing the result is not a fallback, it is a
+  rationalisation.</p>
+  <p>So the live profit and loss this week is a sample of a rule we have <b>already shown
+  we cannot distinguish from chance.</b> Whatever it comes out at, up or down, one week of
+  trading cannot overturn that.</p>
+  <p class="lead" style="margin-top:8px">The deliverable here is not a profitable strategy.
+  It is an agent whose every decision &mdash; and every refusal &mdash; can be checked by
+  someone who does not trust us. That is the part that transfers to a strategy that
+  <i>does</i> work.</p>
+</section>
+
+<section>
+  <div class="n">9 / 11</div>
+  <p class="kicker">The live record &mdash; Wednesday 2 September</p>
+  <h2>Day one: it watched 350 minutes and refused every one</h2>
+  <div class="cards">
+    <div class="card"><b>350</b><span>minutes watched</span></div>
+    <div class="card"><b>350</b><span>recorded refusals</span></div>
+    <div class="card good"><b>0</b><span>minutes missed</span></div>
+    <div class="card"><b>0</b><span>trades</span></div>
+  </div>
+  <div class="quiet">
+    <p style="margin-bottom:2px"><b>Why it stayed quiet &mdash; measured, not guessed.</b>
+    The rule needs SPY <b>0.5% below</b> its volume-weighted average. The deepest dip all
+    day was <b>0.029% below</b>.</p>
+    <div class="bar"><i style="width:5.8%"></i></div>
+    <div class="barlab"><span>deepest dip: &minus;0.029%</span><span>trigger: &minus;0.500%</span></div>
+    <p class="muted" style="margin:10px 0 0">About seventeen times too shallow. The account
+    opened and closed at exactly $100,000.00, and the flattener confirmed it flat on the
+    first attempt. A quiet day is a result, not a failure &mdash; and the page says so in
+    words rather than leaving an empty table for a judge to misread.</p>
+  </div>
+</section>
+
+<section>
+  <div class="n">10 / 11</div>
+  <p class="kicker">Known gaps, stated rather than hidden</p>
+  <h2>What we would not want a judge to have to find</h2>
+  <ul>
+    <li><b>No option-level backtest.</b> 2.4 GB of option prices were downloaded and not
+      used. No data tier carries historical bid/ask, so the cost of trading would have to
+      be modelled rather than measured &mdash; and modelling it precisely for a rule
+      already shown to have no edge was not the best use of three days.</li>
+    <li><b>No independent auditor.</b> Our standing rule is that the code checking the
+      rules should be written by someone who never saw the rules. One author, one week:
+      suspended knowingly. The per-minute record still lets someone else check the work.
+      Nobody has.</li>
+    <li><b>The thresholds are not ours.</b> The entry distance, volume ratio and
+      15-minute exit came from the competition brief with no stated provenance. We swept
+      all of them rather than trusting them &mdash; which is how we found they do not
+      work.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="n">11 / 11</div>
+  <p class="kicker">Everything is public</p>
+  <h2>Check it yourself</h2>
+  <table>
+    <tr><td>Live decision record</td><td><a href="./">samisuleman10.github.io/alpaca-trading-bot-hackathon</a></td></tr>
+    <tr><td>Code, journal, results</td><td><a href="https://github.com/samisuleman10/alpaca-trading-bot-hackathon">github.com/samisuleman10/alpaca-trading-bot-hackathon</a></td></tr>
+    <tr><td>One-page write-up</td><td><a href="https://github.com/samisuleman10/alpaca-trading-bot-hackathon/blob/main/WRITEUP.md">WRITEUP.md</a></td></tr>
+    <tr><td>Paper account</td><td><b>PA3JTED9VTZY</b></td></tr>
+  </table>
+  <p class="muted">The dashboard is a static file built from the journal on disk &mdash;
+  there is no database between the record and the page that could disagree with it, and no
+  field anywhere that accepts an API key. 62 tests pass on every commit, and the page is
+  only republished from a commit where they did.</p>
+</section>
+
+<div class="hint">&larr; &rarr; or scroll &middot; Ctrl+P saves it as a PDF</div>
+<script>
+  var slides = document.querySelectorAll('section'), i = 0;
+  function go(n){ i = Math.max(0, Math.min(slides.length - 1, n));
+                  slides[i].scrollIntoView({behavior:'smooth'}); }
+  addEventListener('keydown', function(e){
+    if(e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' '){ e.preventDefault(); go(i+1); }
+    else if(e.key === 'ArrowLeft' || e.key === 'PageUp'){ e.preventDefault(); go(i-1); }
+    else if(e.key === 'Home') go(0);
+    else if(e.key === 'End') go(slides.length - 1);
+  });
+  // Keep the arrow keys honest when the reader scrolls instead of pressing one.
+  addEventListener('scroll', function(){
+    var mid = scrollY + innerHeight / 2;
+    for(var k = 0; k < slides.length; k++){
+      if(slides[k].offsetTop <= mid && mid < slides[k].offsetTop + slides[k].offsetHeight){ i = k; break; }
+    }
+  }, {passive:true});
+</script>
+</body>
+</html>
