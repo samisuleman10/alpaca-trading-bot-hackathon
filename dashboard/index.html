@@ -447,6 +447,11 @@ const QUESTIONS = [
   }},
   {q: "Did it make money?", a: s => {
     if(s.pnl == null) return "The session has no closing equity recorded yet, so there is no answer to give. A blank is the honest output here, not a zero.";
+    if(s.funnel[4].n === 0) return "No. It placed no trades at all this session, so the " +
+      "account closed exactly where it opened, at " + money(s.opening_equity) + ". That is a " +
+      "real result rather than a missing one: the rule only buys when the price falls a set " +
+      "distance below the day's average, and it never did. A day with nothing to show in " +
+      "profit still shows the agent watching every minute and writing down every refusal.";
     const dir = s.pnl > 0 ? "made" : s.pnl < 0 ? "lost" : "ended level at";
     return "It " + dir + " <b>" + money(Math.abs(s.pnl)) + "</b> across <b>" + s.funnel[4].n +
       "</b> trade" + (s.funnel[4].n === 1 ? "" : "s") + ", on an account that opened at " +
@@ -455,7 +460,11 @@ const QUESTIONS = [
       "It tells you the machinery ran.";
   }},
   {q: "What stopped it when it did want to trade?", a: s => {
-    if(!s.refusal_reasons.length) return "Nothing. Every opinion it formed this session became an order.";
+    if(!s.refusal_reasons.length) return s.funnel[4].n === 0
+      ? "Nothing did, because it never got that far. The entry rule itself never fired, so " +
+        "there was no intended trade for the risk layer or the spread check to turn down. " +
+        "The limits were in force all session and were simply never reached."
+      : "Nothing. Every opinion it formed this session became an order.";
     const t = s.refusal_reasons.reduce((n, r) => n + r.n, 0);
     return "<b>" + num(t) + "</b> time" + (t === 1 ? "" : "s") + " it formed a view and then " +
       "refused to act on it. The most common reason, <b>" + num(s.refusal_reasons[0].n) +
