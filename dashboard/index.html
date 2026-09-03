@@ -445,13 +445,22 @@ const QUESTIONS = [
       "Options are bought, never sold, so the most any single contract can lose is what was " +
       "paid for it — the loss has a floor, which is the whole reason for buying rather than selling.";
   }},
+  {q: "Did it run for the whole session?", a: s => {
+    if(!s.stopped_early) return "Yes. It ran from the opening bell to the close, and there " +
+      "is one recorded decision for every minute in between.";
+    return "No — and it matters enough to say plainly. " + s.stopped_early +
+      " The record below is complete up to " + (s.last_bar_et || "").slice(11, 16) +
+      " New York and simply stops there. Nothing after that time was missed by the " +
+      "agent; it was never asked.";
+  }},
   {q: "Did it make money?", a: s => {
     if(s.pnl == null) return "The session has no closing equity recorded yet, so there is no answer to give. A blank is the honest output here, not a zero.";
     if(s.funnel[4].n === 0) return "No. It placed no trades at all this session, so the " +
       "account closed exactly where it opened, at " + money(s.opening_equity) + ". That is a " +
       "real result rather than a missing one: the rule only buys when the price falls a set " +
       "distance below the day's average, and it never did. A day with nothing to show in " +
-      "profit still shows the agent watching every minute and writing down every refusal.";
+      "profit still shows the agent watching every minute and writing down every refusal." +
+      (s.stopped_early ? " <b>This session was also cut short.</b> " + s.stopped_early : "");
     const dir = s.pnl > 0 ? "made" : s.pnl < 0 ? "lost" : "ended level at";
     return "It " + dir + " <b>" + money(Math.abs(s.pnl)) + "</b> across <b>" + s.funnel[4].n +
       "</b> trade" + (s.funnel[4].n === 1 ? "" : "s") + ", on an account that opened at " +

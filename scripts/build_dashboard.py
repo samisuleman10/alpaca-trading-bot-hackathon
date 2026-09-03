@@ -113,8 +113,14 @@ def summarise(root, session):
 
     start = next((e for e in events if e.get("event") == "start"), {})
     end = next((e for e in events if e.get("event") == "end"), {})
+    # A session the agent finished writes "end". One a human stopped before the
+    # closing bell writes "stopped_early" instead, and carries the reason. Both
+    # close out the account honestly; only the second needs saying out loud, so
+    # the page can never imply a full session it did not run.
+    stopped = next((e for e in events if e.get("event") == "stopped_early"), {})
+    closing_event = end or stopped
     opening = (start.get("detail") or {}).get("equity")
-    closing = (end.get("detail") or {}).get("closing_equity")
+    closing = (closing_event.get("detail") or {}).get("closing_equity")
 
     # Why we said no, grouped. A refusal that happened forty times is a finding;
     # forty separate rows are not.
@@ -147,6 +153,10 @@ def summarise(root, session):
         "opening_equity": opening,
         "equity_curve": equity_curve,
         "closing_equity": closing,
+        "stopped_early": ((stopped.get("detail") or {}).get("reason")
+                          if stopped else None),
+        "last_bar_et": ((stopped.get("detail") or {}).get("last_bar_et")
+                        if stopped else None),
         "pnl": (None if opening is None or closing is None
                 else round(float(closing) - float(opening), 2)),
         "funnel": [
