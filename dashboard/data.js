@@ -22499,6 +22499,17 @@ window.DASHBOARD = {
      "session": "2026-09-03",
      "t_utc": "2026-09-03T18:34:28Z",
      "version": "0.1.0"
+    },
+    {
+     "detail": {
+      "attempt": 1,
+      "outcome": "account is flat"
+     },
+     "event": "flattened",
+     "params_hash": "flattener",
+     "session": "2026-09-03",
+     "t_utc": "2026-09-03T19:50:02Z",
+     "version": "0.1.0"
     }
    ],
    "exits": {},
@@ -22543,6 +22554,209 @@ window.DASHBOARD = {
    "refusal_reasons": [],
    "session": "2026-09-03",
    "stopped_early": "Stopped by hand at 14:32 New York, about ninety minutes before the close, because the machine running it was needed. The agent did not stop on its own and did not fail. The account was confirmed flat first -- no positions and no open orders -- so nothing was left unmanaged by ending the session early.",
+   "underlying": "SPY"
+  },
+  {
+   "account": "PA3JTED9VTZY",
+   "closing_equity": 100000.0,
+   "counts": [
+    {
+     "action": "no_signal",
+     "meaning": "Looked, and the rule saw nothing worth acting on.",
+     "n": 3
+    }
+   ],
+   "decisions": [
+    {
+     "action": "no_signal",
+     "bar_t_et": "2026-09-04T11:19:00",
+     "bar_t_utc": "2026-09-04T15:19:00Z",
+     "close": 769.365,
+     "evidence": {
+      "close": 769.365,
+      "session_vwap": 771.2325225467154
+     },
+     "params_hash": "f13d3a6684743369",
+     "reason": "Nothing to do: the price is not far enough below today's average, or this minute was not busy enough.",
+     "session": "2026-09-04",
+     "t_utc": "2026-09-04T15:20:05Z",
+     "version": "0.1.0"
+    },
+    {
+     "action": "no_signal",
+     "bar_t_et": "2026-09-04T11:20:00",
+     "bar_t_utc": "2026-09-04T15:20:00Z",
+     "close": 769.33,
+     "evidence": {
+      "close": 769.33,
+      "session_vwap": 771.2285682909618
+     },
+     "params_hash": "f13d3a6684743369",
+     "reason": "Nothing to do: the price is not far enough below today's average, or this minute was not busy enough.",
+     "session": "2026-09-04",
+     "t_utc": "2026-09-04T15:21:05Z",
+     "version": "0.1.0"
+    },
+    {
+     "action": "no_signal",
+     "bar_t_et": "2026-09-04T11:21:00",
+     "bar_t_utc": "2026-09-04T15:21:00Z",
+     "close": 769.19,
+     "evidence": {
+      "close": 769.19,
+      "session_vwap": 771.2088156968372
+     },
+     "params_hash": "f13d3a6684743369",
+     "reason": "Nothing to do: the price is not far enough below today's average, or this minute was not busy enough.",
+     "session": "2026-09-04",
+     "t_utc": "2026-09-04T15:22:05Z",
+     "version": "0.1.0"
+    }
+   ],
+   "dry_run": false,
+   "equity_curve": [
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-09-04T11:19:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-09-04T11:20:00"
+    },
+    {
+     "equity": 100000.0,
+     "holding": null,
+     "t_et": "2026-09-04T11:21:00"
+    }
+   ],
+   "events": [
+    {
+     "detail": {
+      "account_number": "PA3JTED9VTZY",
+      "adopted_position": null,
+      "dry_run": false,
+      "equity": 100000.0,
+      "feed": "iex",
+      "limits": {
+       "daily_loss_limit": 500.0,
+       "flat_by": "15:45",
+       "max_open_positions": 1,
+       "max_premium_per_trade": 250.0
+      },
+      "options_approved_level": 3,
+      "positions_found_at_start": [],
+      "status": "ACTIVE",
+      "underlying": "SPY"
+     },
+     "event": "start",
+     "params_hash": "f13d3a6684743369",
+     "session": "2026-09-04",
+     "t_utc": "2026-09-04T15:19:42Z",
+     "version": "0.1.0"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-09-04T11:19:00",
+      "bar_t_utc": "2026-09-04T15:19:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "params_hash": "f13d3a6684743369",
+     "session": "2026-09-04",
+     "t_utc": "2026-09-04T15:20:06Z",
+     "version": "0.1.0"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-09-04T11:20:00",
+      "bar_t_utc": "2026-09-04T15:20:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "params_hash": "f13d3a6684743369",
+     "session": "2026-09-04",
+     "t_utc": "2026-09-04T15:21:05Z",
+     "version": "0.1.0"
+    },
+    {
+     "detail": {
+      "bar_t_et": "2026-09-04T11:21:00",
+      "bar_t_utc": "2026-09-04T15:21:00Z",
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "holding": null
+     },
+     "event": "equity",
+     "params_hash": "f13d3a6684743369",
+     "session": "2026-09-04",
+     "t_utc": "2026-09-04T15:22:05Z",
+     "version": "0.1.0"
+    },
+    {
+     "detail": {
+      "closing_equity": 100000.0,
+      "last_bar_et": "2026-09-04T11:21:00",
+      "minutes_processed": 3,
+      "opening_equity": 100000.0,
+      "reason": "Started late, at 11:19 New York rather than the 09:30 open, and stopped by hand at 11:22 once the hackathon submission was in. Three minutes are recorded and the rest of the day was never watched. The agent did not fail and did not stop itself; it was simply not asked to run. The account was confirmed flat first -- no positions and no open orders -- so nothing was left unmanaged.",
+      "still_holding": null,
+      "stopped_by": "operator"
+     },
+     "event": "stopped_early",
+     "params_hash": "f13d3a6684743369",
+     "session": "2026-09-04",
+     "t_utc": "2026-09-04T15:23:12Z",
+     "version": "0.1.0"
+    }
+   ],
+   "exits": {},
+   "feed": "iex",
+   "funnel": [
+    {
+     "label": "Looked at the market",
+     "n": 3,
+     "note": "One decision per minute the market was open."
+    },
+    {
+     "label": "Formed an opinion",
+     "n": 0,
+     "note": "The rule saw a setup worth acting on."
+    },
+    {
+     "label": "Found a contract it could buy",
+     "n": 0,
+     "note": "A contract existed, quoted on both sides, spread inside the limit."
+    },
+    {
+     "label": "Risk layer allowed it",
+     "n": 0,
+     "note": "Within the per-trade cap, the position limit and the daily loss limit."
+    },
+    {
+     "label": "Actually filled",
+     "n": 0,
+     "note": "The order was accepted and the contract was bought."
+    }
+   ],
+   "last_bar_et": "2026-09-04T11:21:00",
+   "limits": {
+    "daily_loss_limit": 500.0,
+    "flat_by": "15:45",
+    "max_open_positions": 1,
+    "max_premium_per_trade": 250.0
+   },
+   "opening_equity": 100000.0,
+   "orders": [],
+   "pnl": 0.0,
+   "refusal_reasons": [],
+   "session": "2026-09-04",
+   "stopped_early": "Started late, at 11:19 New York rather than the 09:30 open, and stopped by hand at 11:22 once the hackathon submission was in. Three minutes are recorded and the rest of the day was never watched. The agent did not fail and did not stop itself; it was simply not asked to run. The account was confirmed flat first -- no positions and no open orders -- so nothing was left unmanaged.",
    "underlying": "SPY"
   }
  ]
